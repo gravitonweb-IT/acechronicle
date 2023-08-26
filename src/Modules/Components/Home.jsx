@@ -56,7 +56,6 @@ const Home = () => {
           and a hot cup of coffee to deliver the<br></br> difference you are looking for.
         </p> 
 
-        <div className="border-divider"></div>
         </div> 
         </div>
         </Col>
