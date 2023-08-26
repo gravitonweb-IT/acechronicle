@@ -1,3 +1,284 @@
+/* Home.css */
+.slider-img {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+.custom-carousel {
+  max-height: 600px;
+}
+
+.slider-caption {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+/* cards css */
+
+.custom-card-container {
+  display: flex;
+  height: 100%;
+}
+
+.custom-card {
+  background-color: #f8f9fa; /* Set the background color */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+.custom-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.custom-card .card-text {
+  font-size: 1rem;
+}
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.home-cards {
+  margin-top: 7rem !important;
+  margin-bottom: 10rem;
+}
+
+/* progress bar */
+
+.page-container {
+  background-color: #180d5b;
+}
+
+.homeimg1 {
+  margin-left: 30rem;
+  margin-top: 5rem;
+}
+
+.home-box {
+  background-color: #fafafa;
+  padding: 3rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-box-img {
+  margin-bottom: -40rem;
+}
+
+.skill-bar {
+  width: 100%;
+
+  margin: 20px 0;
+}
+
+.skill-bar .info {
+  margin-bottom: 5px;
+}
+
+.skill-bar .info span {
+  font-size: 15px;
+
+  font-weight: 600;
+
+  opacity: 0;
+
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-bar .progress-line {
+  height: 10px;
+
+  width: 80%;
+
+  background: #f6ebfa;
+
+  position: relative;
+
+  border-radius: 10px;
+
+  transform: left;
+
+  transform: scaleX(0);
+
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line span {
+  height: 100%;
+
+  width: 80%;
+
+  background-image: linear-gradient(220deg, #07b787 0%, #7ed500 100%);
+
+  position: absolute;
+
+  border-radius: 10px;
+
+  transform: left;
+
+  transform: scaleX(0);
+
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line.html span {
+  width: 100%;
+}
+
+.progress-line.css span {
+  width: 90%;
+}
+
+.progress-line.bootstrap span {
+  width: 92%;
+}
+
+.progress-line.javascript span {
+  width: 95%;
+}
+
+.progress-line.reactjs span {
+  width: 94%;
+}
+
+.progress-line.figma span {
+  width: 99%;
+}
+
+.progress-line span::before {
+  position: absolute;
+
+  content: "";
+
+  top: -10px;
+
+  right: 0;
+
+  height: 0;
+
+  width: 0;
+
+  border: 7px solid transparent;
+
+  border-bottom-width: 0px;
+
+  border-right-width: 0px;
+
+  border-top-color: white;
+
+  opacity: 0;
+
+  animation: showText 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+  position: absolute;
+
+  top: -30px;
+
+  right: 0;
+
+  background-color: white;
+
+  color: #000;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  padding: 2px 8px;
+
+  border-radius: 3px;
+
+  opacity: 0;
+
+  animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-line.html span::after {
+  content: "100%";
+}
+
+.progress-line.css span::after {
+  content: "90%";
+}
+
+.progress-line.bootstrap span::after {
+  content: "92%";
+}
+
+.progress-line.javascript span::after {
+  content: "95%";
+}
+
+.progress-line.reactjs span::after {
+  content: "94%";
+}
+
+.progress-line.figma span::after {
+  content: "99%";
+}
+
+@media screen and (max-width: 768px) {
+  .page-container {
+    display: none;
+  }
+  .home-box1 {
+    margin-bottom: 20px;
+    padding-top: 30rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .home-box {
+    margin-top: 40rem;
+    padding-left: 1rem !important;
+  }
+  .custom-card {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .avatar-heading {
   font-weight: 500;
   margin-bottom: 20px;
@@ -48,6 +329,7 @@
 }
 .main-container{
     padding: 0px 100px;
+    margin-top: 12rem;
 }
 @media screen and (max-width:992px) {
     .main-container{
@@ -212,6 +494,9 @@
 }
 .home-slider1{
   margin-top: 5rem !important;
+}
+.main-container{
+  margin-top: 5rem;
 }
 @media screen and (max-width: 576px) {
   .carousel1{

@@ -1,0 +1,58 @@
+
+.card {
+    position: absolute;
+    overflow: hidden;
+    animation: reverse;
+    top: 0;
+    left: 0;
+  }
+  /* .custom-card .image {
+    object-fit: cover;  
+    height: 460px;      
+} */
+  .image{
+    vertical-align: top;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  p{
+    font-family: cursive;
+    font-size:small;
+    font-style: italic;
+    color:silver;
+    text-decoration: none;
+    /* cursor: pointer; */
+  
+  }
+
+  .service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3b6d6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.15s ease-in-out;
+    transition-delay: 0s;
+    transition-property: color;
+    z-index: 2;
+    cursor: pointer;
+  
+  }
+  
+  /* Show overlay on hover */
+  .card:hover .service-overlay {
+    opacity: 1;
+  }
+  
+  /* Styles for the content within the overlay */
+  .service {
+    text-align: center;
+    color: white;
+  }
+  
