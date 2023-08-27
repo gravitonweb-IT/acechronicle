@@ -1,62 +1,73 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import NavBar from "react-bootstrap/Navbar";
-import Offcanvas from "react-bootstrap/Offcanvas";
 import image1 from "../Modules/Components/Images/ace_logo_dark.png";
 import "./Navbar.css";
+import "animate.css";
 
 const Navbar = () => {
-  const expandSizes = [false, "sm", "md", "lg", "xl", "xxl"];
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const openNav = () => {
+    setIsNavOpen(true);
+  };
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+  const handleNavLinkClick = () => {
+    closeNav();
+  };
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsHeaderFixed(true);
+      } else {
+        setIsHeaderFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <Container fluid className="custom-navbar">
-        <NavBar expand={expandSizes[0]} className="custom-navbar fixed-top ">
-          <NavBar.Brand href="#">
-            <img src={image1} alt="my image" className="logo-img" />
-          </NavBar.Brand>
-          <NavBar.Toggle
-            aria-controls={`offcanvasNavbar-expand-${expandSizes[0]}`}
-          />
-          <NavBar.Offcanvas
-            id={`offcanvasNavbar-expand-${expandSizes[0]}`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-${expandSizes[0]}`}
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title
-                id={`offcanvasNavbarLabel-expand-${expandSizes[0]}`}
-              >
-                Ace Chronicle
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-center flex-grow-1 pe-3">
-                <Link to="/" className="custom-link">
-                  Home
-                </Link>
-                <Link to="/about" className="custom-link">
-                  About
-                </Link>
-                <Link to="/blog" className="custom-link">
-                  Blog
-                </Link>
-                <Link to="/detailsblog" className="custom-link">
-                  Blog Details
-                </Link>
-                <Link to="/services" className="custom-link">
-                  Services
-                </Link>
-                <Link to="/career" className="custom-link">
-                  Career
-                </Link>
-              </Nav>
-            </Offcanvas.Body>
-          </NavBar.Offcanvas>
-        </NavBar>
-      </Container>
+      <div className={`navbar-container ${isHeaderFixed ? "fixed-header" : ""}`}>
+        <img src={image1} alt="my image" className="logo-img" />
+        <span className="toggle-button" onClick={openNav}>
+          &#9776;
+        </span>
+        <div id="mySidenav" className={`sidenav ${isNavOpen ? "open" : ""}`}>
+          <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+            &times;
+          </a>
+          <Link to="/"  className="custom-link  "  onClick={handleNavLinkClick}>
+            Home
+          </Link>
+          <Link to="/about" className="custom-link "  onClick={handleNavLinkClick}>
+            About
+          </Link>
+          <Link to="/blog" className="custom-link "  onClick={handleNavLinkClick}>
+            Blog
+          </Link>
+          <Link to="/detailsblog" className="custom-link"  onClick={handleNavLinkClick}>
+            Blog Details
+          </Link>
+          <Link to="/services" className="custom-link "  onClick={handleNavLinkClick}>
+            Services
+          </Link>
+          <Link to="/career" className="custom-link"  onClick={handleNavLinkClick}>
+            Career
+          </Link>
+        </div>
+
+        <h2></h2>
+        <p>.</p>
+      </div>
     </>
   );
 };

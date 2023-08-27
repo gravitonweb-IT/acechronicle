@@ -1,12 +1,10 @@
 /* Home.css */
 .slider-img {
-  height: 600px;
+  height: 650px;
   object-fit: cover;
   width: 100%;
 }
-.custom-carousel {
-  max-height: 600px;
-}
+
 
 .slider-caption {
   text-align: center;
@@ -257,23 +255,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* avatar second part */
 
 
 
