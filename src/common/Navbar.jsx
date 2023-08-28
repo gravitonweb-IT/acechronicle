@@ -48,6 +48,9 @@ const Navbar = () => {
           <Link to="/"  className="custom-link  "  onClick={handleNavLinkClick}>
             Home
           </Link>
+          <Link to="/mainhome"  className="custom-link  "  onClick={handleNavLinkClick}>
+            MainHome
+          </Link>
           <Link to="/about" className="custom-link "  onClick={handleNavLinkClick}>
             About
           </Link>

@@ -9,6 +9,7 @@ import About from "./Modules/Components/About";
 import Navbar from "./common/Navbar";
 import Footer1 from "./common/Footer1";
 import CopyRight from "./common/CopyRight";
+import MainHome from "./Modules/Components/MainHome";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
       <Routes>
         <Route index path="/" element={<Home />} />
+        <Route index path="/mainhome" element={<MainHome />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/detailsblog" element={<DetailsBlog />} />
