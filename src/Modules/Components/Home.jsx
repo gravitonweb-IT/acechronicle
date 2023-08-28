@@ -302,7 +302,7 @@ const Home = () => {
       <Container>
         <div className="main-container">
           {/* *************avatar*********** */}
-          <Row>
+          <Row className="avatar">
             <Col md={9}>
               <div className="d-flex justify-content-center align-items-center h-100 text-center">
                 <div>
@@ -521,7 +521,7 @@ const Home = () => {
           </Row>
 
           {/* *********knowledge******** */}
-          <Row className="knowledge-part">
+          <Row className="knowledge-part mb-4">
             <Col md={6}>
               <div>
                 <img src={KnowledgeImg}></img>

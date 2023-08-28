@@ -1,0 +1,30 @@
+.about-bg-color{
+    background-color: rgba(216, 220, 220, 0.3);
+  }
+  .about-heading{
+      font-size: 35px;
+      font-weight: 500;
+      color: #3b6d6e;
+  }
+  .about-link{
+      text-decoration: none;
+  }
+  .about-subheading{
+      color: #666d77;
+      font-size: 17px;
+      font-weight: 500;
+  }
+  .about-arrow{
+      color: #666d77;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1em;
+      margin: 0 5px;
+  }
+  .about-middle-bg{
+      background-color: #24262a;;
+  }
+  .about-paragraph{
+      color: #848892;
+      padding: 70px 10px;
+  }

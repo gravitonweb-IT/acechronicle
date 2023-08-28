@@ -8,6 +8,7 @@ import Home from "./Modules/Components/Home";
 import About from "./Modules/Components/About";
 import Navbar from "./common/Navbar";
 import Footer1 from "./common/Footer1";
+import CopyRight from "./common/CopyRight";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       </Routes>
 
       <Footer1 />
+      <CopyRight />
     </>
   );
 }
