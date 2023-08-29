@@ -6,14 +6,7 @@ import Avatar1 from "./Images/avatar1.jpg";
 import Avatar2 from "./Images/avatar2.jpg";
 import KnowledgeImg from "./Images/Knowledge-Hub-05.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  faCubes,
-  faGem,
-  faAnchor,
-  faEye,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUser,faCubes,faGem,faAnchor,faEye, faEnvelope,} from "@fortawesome/free-solid-svg-icons";
 import { faQuoteRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
 import "animate.css";
