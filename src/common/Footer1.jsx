@@ -38,7 +38,7 @@ export default function Footer1() {
               </li>
               <li className="footer-list mt-5">
                 <div className='footer-image'>
-                 <img src={footer2} className="w-3/4"></img>
+                 <img src={footer2}></img>
                 </div>
                 <div>
                   <h6 className="footer-heading">15 Signs you're in Love with UX Designs</h6>
@@ -47,7 +47,7 @@ export default function Footer1() {
               </li>
               <li className="footer-list mt-5">
                 <div className='footer-image'>
-                 <img src={footer3} className="w-3/4"></img>
+                 <img src={footer3}></img>
                 </div>
                 <div>
                   <h6 className="footer-heading">About Bicycle Touring Pro</h6>
@@ -68,22 +68,22 @@ export default function Footer1() {
             <div className='col-lg-2 col-md-6 col-sm-6'>
               <h4>Services Link</h4>
               <p className="mt-5">
-                <Link to="#" className='footer-linking'>Home</Link>
+                <Link to="/" className='footer-linking'>Home</Link>
               </p>
               <p className="mt-3">
-                <Link to="#" className='footer-linking'>About</Link>
+                <Link to="/about" className='footer-linking'>About</Link>
               </p>
               <p className="mt-3">
-                <Link to="#" className='footer-linking'>Contact</Link>
+                <Link to="/career" className='footer-linking'>Career</Link>
               </p>
               <p className="mt-3">
-                <Link to="#" className='footer-linking'>Services</Link>
+                <Link to="services" className='footer-linking'>Services</Link>
               </p>
               <p className="mt-3">
-                <Link to="#" className='footer-linking'>Blog</Link>
+                <Link to="/blog" className='footer-linking'>Blog</Link>
               </p>
               <p className="mt-3">
-                <Link to="#" className='footer-linking'>Blog Details</Link>
+                <Link to="/detailsblog" className='footer-linking'>Blog Details</Link>
               </p>
               
             </div>

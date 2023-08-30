@@ -57,8 +57,8 @@ const Navbar = () => {
           <Link to="/blog" className="custom-link "  onClick={handleNavLinkClick}>
             Blog
           </Link>
-          <Link to="/detailsblog" className="custom-link"  onClick={handleNavLinkClick}>
-            Blog Details
+          <Link to="/contact" className="custom-link"  onClick={handleNavLinkClick}>
+           Contact
           </Link>
           <Link to="/services" className="custom-link "  onClick={handleNavLinkClick}>
             Services

@@ -81,6 +81,7 @@
   height: 0;
   overflow: hidden;
   transition: height 0.3s, transform 0.3s;
+  cursor: pointer;
 }
 
 .our-cards1:hover .overlay {
@@ -99,9 +100,6 @@
 .our-cards1:hover .overlay-content {
   transform: translateY(0);
 }
-
-
-
 
 /* h parts */
 
@@ -219,24 +217,11 @@
     margin-bottom: 2rem;
   }
 }
-
-
-
 /* Depart Cards */
 .home-animated-containers{
    background-color: #24262a;
    padding: 30px;
 }
-/* .mainhome-animated-cards {
-  margin-top: 5rem !important;
-}
-@media screen and (max-width:768px) {
-  .mainhome-animated-cards{
-    margin-top: 3rem !important;
-  }
-} */
-
-
 .home-animated-card-content {
   width: 100%;
   height: 100%;
@@ -262,22 +247,6 @@
   font-size: 30px;
   font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ratings */
 .main-home-rating{
