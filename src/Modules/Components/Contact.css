@@ -78,3 +78,10 @@
 .contact2-icon:hover{
   color: #3b6d6e;
 }
+.map-container {
+    
+  width: 80%; 
+  background-color: white;
+  border-radius: 10px; 
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); 
+}
