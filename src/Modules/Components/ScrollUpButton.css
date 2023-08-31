@@ -1,0 +1,9 @@
+.scroll-up-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: black;
+    font-size: 30px;
+    background-color:#3b6d6e;
+    padding: 5px 10px;
+}
