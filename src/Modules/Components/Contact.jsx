@@ -66,9 +66,9 @@ export default function Contact() {
           <Row className="pt-5 pb-5 contact-container-box">
             <Col md={6}>
               <h2 className="main-contact-heading">Let's Talk</h2>
-              <Form onSubmit={handleSubmit} className="pt-4">
+              <Form onSubmit={handleSubmit}>
                 <Row>
-                  <Col md={6}>
+                  <Col md={6} className="mt-3">
                     <div className="contact-input-field mb-3">
                       <input
                         type="text"
@@ -80,7 +80,7 @@ export default function Contact() {
                     </div>
                   </Col>
 
-                  <Col md={6}>
+                  <Col md={6} className="mt-3">
                     <div className="contact-input-field mb-3">
                       <input
                         type="text"

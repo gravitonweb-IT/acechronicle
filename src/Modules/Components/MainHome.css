@@ -174,14 +174,6 @@
   margin-bottom: -2rem;
 }
 
-.avatar-section1:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-}
-
-.avatar-section1:hover .avatar-profile-title1 {
-  color: #6ec1e4;
-}
 .avatar-image1 {
   width: 90%;
   height: 60%;
@@ -220,7 +212,6 @@
 /* Depart Cards */
 .home-animated-containers{
    background-color: #24262a;
-   padding: 30px;
 }
 .home-animated-card-content {
   width: 100%;
@@ -260,6 +251,8 @@
   .main-home-rating-container{
     height: auto;
     padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 .home-main-icons-rating{
@@ -461,7 +454,6 @@
   }
 .main-home-bg-color{
   background-color: #24262a;
-  padding:40px;
 }
 .knowledge-center-heading{
     color: #3b6d6e;

@@ -624,8 +624,6 @@ export default function MainHome() {
               </Card.Body>
             </Card>
 
-            {/* 5th Card */}
-
             <Card
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -1053,7 +1051,7 @@ export default function MainHome() {
         <Container>
           <div className="home-knowledge-container">
             <Row>
-              <h2 className="knowledge-center-heading">Knowledge Center</h2>
+              <h2 className="knowledge-center-heading mt-5">Knowledge Center</h2>
               <Col md={4} className="mt-5">
                 <div className="knowledge-center-images">
                   <img src={Blog1}></img>

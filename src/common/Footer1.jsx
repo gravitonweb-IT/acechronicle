@@ -14,7 +14,7 @@ export default function Footer1() {
     <>
     <div className='footer-background'>
     <div className='container-fluid'>
-        <div className='row p-5 text-white'>
+        <div className='row p-4 text-white'>
             <div className='col-lg-4 col-md-6 col-sm-6'>
             <div>
               <img src={Logo}></img>
@@ -83,7 +83,7 @@ export default function Footer1() {
                 <Link to="/blog" className='footer-linking'>Blog</Link>
               </p>
               <p className="mt-3">
-                <Link to="/detailsblog" className='footer-linking'>Blog Details</Link>
+                <Link to="/contact" className='footer-linking'>Contact</Link>
               </p>
               
             </div>
