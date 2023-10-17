@@ -323,7 +323,7 @@ export default function MainHome() {
                     level, from blogs to website pages.
                   </Card.Text>
 
-                  <Link to="">
+                  <Link to="/contentspeak">
                     <Button className="home-button-section">Read more</Button>
                   </Link>
                 </div>
@@ -351,7 +351,9 @@ export default function MainHome() {
                     dream design into reality.
                   </Card.Text>
 
+                  <Link to="/designpop">
                   <Button className="home-button-section">Read more</Button>
+                  </Link>
                 </div>
               </Card>
             </div>
@@ -376,8 +378,6 @@ export default function MainHome() {
                     marketing and sales with perfect digital marketing
                     strategies.
                   </Card.Text>
-
-                  <Button className="home-button-section">Read more</Button>
                 </div>
               </Card>
             </div>
@@ -409,6 +409,10 @@ export default function MainHome() {
                     increase in number, and income gain, we are here to help you
                     conquer the social media platforms.
                   </Card.Text>
+
+                  <Link to="/markettwist">
+                  <Button className="home-button-section">Read more</Button>
+                  </Link>
                 </div>
               </Card>
             </div>
@@ -456,7 +460,9 @@ export default function MainHome() {
                     your every single need.
                   </Card.Text>
 
+                  <Link to="/exclusive"> 
                   <Button className="home-button-section">Read more</Button>
+                  </Link>
                 </div>
               </Card>
             </div>

@@ -12,6 +12,9 @@ import CopyRight from "./common/CopyRight";
 import MainHome from "./Modules/Components/MainHome";
 import ScrollUpButton from "./Modules/Components/ScrollUpButton";
 import ContentSpeak from "./Modules/Components/ContentSpeak";
+import DesignPop from "./Modules/Components/DesignPop";
+import MarketTwist from "./Modules/Components/MarketTwist";
+import Exclusive from "./Modules/Components/Exclusive";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contentspeak" element={<ContentSpeak />} />
+        <Route path="/designpop" element={<DesignPop />} />
+        <Route path="/markettwist" element={<MarketTwist />} />
+        <Route path="/exclusive" element={<Exclusive />} />
       </Routes>
 
       <Footer1 />

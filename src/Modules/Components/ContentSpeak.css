@@ -24,7 +24,11 @@
   color: white;
   font-weight: 800;
 }
-.content-second-section{
-  background-color: #24262a;
+.content-second-section {
+    background-color: #24262a;
 }
-
+.content-list-section{
+    list-style-type: disc;
+    color: #848892;
+}
+  
