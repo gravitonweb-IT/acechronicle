@@ -11,6 +11,7 @@ import Footer1 from "./common/Footer1";
 import CopyRight from "./common/CopyRight";
 import MainHome from "./Modules/Components/MainHome";
 import ScrollUpButton from "./Modules/Components/ScrollUpButton";
+import ContentSpeak from "./Modules/Components/ContentSpeak";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/contentspeak" element={<ContentSpeak />} />
       </Routes>
 
       <Footer1 />

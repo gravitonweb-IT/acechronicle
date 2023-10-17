@@ -1,0 +1,30 @@
+.content-section {
+  position: relative;
+}
+
+.content-section-image {
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .content-section-image {
+    height: 300px;
+  }
+}
+
+.content-section-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-weight: 800;
+}
+.content-second-section{
+  background-color: #24262a;
+}
+

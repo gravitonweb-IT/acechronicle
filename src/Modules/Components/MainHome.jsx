@@ -29,6 +29,11 @@ import image6 from "./MainHomeImgs/Marketing-With-A-Twist1.jpg";
 import image7 from "./MainHomeImgs/Social-Media-Reach-That-You-Need.jpg";
 import image8 from "./MainHomeImgs/Futuristic-Strategies-A-Big-Yes.jpg";
 import image9 from "./MainHomeImgs/Exclusively-Customised-services.jpg";
+import Slide1 from "./MainHomeImgs/testimonial-image1.png";
+import Slide2 from "./MainHomeImgs/testimonials-image2.png";
+import Slide3 from "./MainHomeImgs/testimonials-image3.png";
+import Slide4 from "./MainHomeImgs/testimonials-image4.png";
+import Slide5 from "./MainHomeImgs/testimonials-image5.png";
 import Avatar1 from "./Images/avatar1.jpg";
 import Avatar2 from "./Images/avatar2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -40,12 +45,15 @@ import {
   faAnchor,
   faEye,
   faEnvelope,
+  faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faWalking,
   faPuzzlePiece,
   faCamera,
   faShieldHalved,
+  faArrowLeft,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -54,7 +62,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function MainHome() {
-
   const [projects, setProjects] = useState(0);
   const [startups, setStartups] = useState(0);
   const [brands, setBrands] = useState(0);
@@ -108,10 +115,11 @@ export default function MainHome() {
     fade: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    dots: true,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
   };
@@ -129,13 +137,14 @@ export default function MainHome() {
     <>
       {/* Carousels */}
       <div
-        id="carouselExampleSlidesOnly"
-        class="carousel-slide1"
+        id="carouselExampleControls"
+        class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src={image1} alt="my image" className="slider-img" />
+
             <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
               <h1>
                 <b>
@@ -155,8 +164,10 @@ export default function MainHome() {
               </Button>{" "}
             </Carousel.Caption>
           </div>
+
           <div class="carousel-item">
             <img src={image2} alt="my image" className="slider-img" />
+
             <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
               <h1>
                 <b>
@@ -176,8 +187,10 @@ export default function MainHome() {
               </Button>{" "}
             </Carousel.Caption>
           </div>
+
           <div class="carousel-item">
             <img src={image3} alt="my image" className="slider-img" />
+
             <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
               <h1>
                 <b>
@@ -198,7 +211,30 @@ export default function MainHome() {
             </Carousel.Caption>
           </div>
         </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       {/* cards */}
       <div className="mainhome-card-backgroundcolor">
         <Container>
@@ -263,168 +299,171 @@ export default function MainHome() {
         </Container>
 
         {/* next cards      */}
-        <Container fluid>
-          <Row className="row first-row1  mt-5 mb-4">
-            <Col xs={12} md={4} className="col-md-4 col-12">
-              <div className="cards-imgs1">
-                <Card className="our-cards1">
-                  <img src={image4} alt="my image" className="our-images1" />
-                  <Card.Body>
-                    <div className="overlay">
-                      <Card.Title className="card-title-overlay">
-                        <h2> Content That Speaks For Itself</h2>
-                      </Card.Title>
-                      <div className="overlay-content">
-                        <Card.Text>
-                          Creating engaging content that connects with the
-                          audience is key to creating brand value. With the
-                          experts on board, get all your content needs
-                          fulfilled. We have your back at every level, from
-                          blogs to website pages.
-                        </Card.Text>
-                        <Button variant="outline-light">Read more</Button>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Col>
+        <div className="container-fluid">
+          <div className="row">
+            {/* First Row */}
 
-            <Col xs={12} md={4} className="col-md-4 col-12">
-              <div className="cards-imgs1">
-                <Card className="our-cards1">
-                  <img src={image5} alt="my image" className="our-images1" />
-                  <Card.Body>
-                    <div className="overlay">
-                      <Card.Title className="card-title-overlay">
-                        <h2> Design That Pops Out</h2>
-                      </Card.Title>
-                      <div className="overlay-content">
-                        <Card.Text>
-                          Let us simplify for connecting with some creative
-                          image additions. Get your logo, brochure, or even your
-                          visiting card designed by our experts. Share your
-                          vision, and with some popping designs and shiny
-                          shades, we will mold your dream design into reality.
-                        </Card.Text>
-                        <Button variant="outline-light">Read more</Button>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Col>
+            <div className="col-md-4 home-section-cards1">
+              <Card className="group relative cursor-pointer items-center justify-center overflow-hidden border-0 rounded-0 transition-shadow mx-2 mx-md-2">
+                <div className="h-[26rem] w-[30rem]">
+                  <Card.Img src={image4} alt="" className="" />
+                </div>
 
-            <Col xs={12} md={4} className="col-md-4 col-12">
-              <div className="cards-imgs1">
-                <Card className="our-cards1">
-                  <img src={image6} alt="my image" className="our-images1" />
-                  <Card.Body>
-                    <div className="overlay">
-                      <Card.Title className="card-title-overlay">
-                        <h2>Marketing With A Twist</h2>
-                      </Card.Title>
-                      <div className="overlay-content">
-                        <Card.Text>
-                          Why follow the old P’s of marketing when you can
-                          access new C’s of connect, customize, curate, and
-                          creativity. We help you reach the masses and
-                          exponentially increase your digital marketing and
-                          sales with perfect digital marketing strategies.
-                        </Card.Text>
-                        <Button variant="outline-light">Read more</Button>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Col>
-          </Row>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
 
-          <Row className="row second-row1 mb-5 ">
-            <Col xs={12} md={4} className="col-md-4 col-12">
-              <div className="cards-imgs1">
-                <Card className="our-cards1">
-                  <img src={image7} alt="my image" className="our-images1" />
-                  <Card.Body>
-                    <div className="overlay">
-                      <Card.Title className="card-title-overlay">
-                        <h2>
-                          Social Media Reach That You <br />
-                          Need
-                        </h2>
-                      </Card.Title>
-                      <div className="overlay-content">
-                        <Card.Text>
-                          Facebook, Instagram, Twitter, or LinkedIn, you name
-                          the social media account, and we will design a
-                          strategy to help increase your reach there. With
-                          genuine strategy, and income gain, we are here to help
-                          you conquer the social media platforms.
-                        </Card.Text>
-                        <Button variant="outline-light">Read more</Button>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Col>
+                <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <Card.Title className=" home-section-title  font-bold text-white">
+                    Content That Speaks For Itself
+                  </Card.Title>
 
-            <Col xs={12} md={4} className="col-md-4 col-12">
-              <div className="cards-imgs1">
-                <Card className="our-cards1">
-                  <img src={image8} alt="my image" className="our-images1" />
-                  <Card.Body>
-                    <div className="overlay">
-                      <Card.Title className="card-title-overlay">
-                        <h2>Futuristic Strategies A Big Yes</h2>
-                      </Card.Title>
-                      <div className="overlay-content">
-                        <Card.Text>
-                          We believe in strategic planning. A great brand works
-                          on evaluating today's results and planning for
-                          tomorrow, and we are no different. We take pride in
-                          designing and delivering excellence by creating
-                          strategies with your collaboration and vision for
-                          tomorrow.
-                        </Card.Text>
-                        <Button variant="outline-light">Read more</Button>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Col>
+                  <Card.Text className="home-section-content  mt-4 text-white text-justify">
+                    Creating engaging content that connects with the audience is
+                    key to creating brand value. With the experts on board, get
+                    all your content needs fulfilled. We have your back at every
+                    level, from blogs to website pages.
+                  </Card.Text>
 
-            <Col xs={12} md={4} className="col-md-4 col-12">
-              <div className="cards-imgs1">
-                <Card className="our-cards1">
-                  <img src={image9} alt="my image" className="our-images1" />
-                  <Card.Body>
-                    <div className="overlay">
-                      <Card.Title className="card-title-overlay">
-                        <h2>Exclusively Customised Services</h2>
-                      </Card.Title>
-                      <div className="overlay-content">
-                        <Card.Text>
-                          No two things are similar, and so is your need.
-                          Designing a customized service that includes monthly
-                          plans, amazing designs, Our Service includes Exclusive
-                          works in various fields from translation and
-                          transcription to virtual assistance, from Voice overs
-                          & podcasts to Social Media Management.
-                        </Card.Text>
-                        <Button variant="outline-light">Read more</Button>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+                  <Link to="">
+                    <Button className="home-button-section">Read more</Button>
+                  </Link>
+                </div>
+              </Card>
+            </div>
 
-        {/* h parts */}
+            <div className="col-md-4 home-section-cards1">
+              <Card className="group relative cursor-pointer items-center justify-center overflow-hidden border-0 rounded-0 transition-shadow mx-2 mx-md-2">
+                <div className="h-[26rem] w-[30rem]">
+                  <Card.Img src={image5} alt="" className="" />
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+
+                <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <Card.Title className=" home-section-title mt-5  font-bold text-white">
+                    Design That Pops Out
+                  </Card.Title>
+
+                  <Card.Text className="home-section-content mt-10 text-white text-justify">
+                    Let us simplify for connecting with some creative image
+                    additions. Get your logo, brochure, or even your visiting
+                    card designed by our experts. Share your vision, and with
+                    some popping designs and shiny shades, we will mold your
+                    dream design into reality.
+                  </Card.Text>
+
+                  <Button className="home-button-section">Read more</Button>
+                </div>
+              </Card>
+            </div>
+
+            <div className="col-md-4  home-section-cards1">
+              <Card className="group relative cursor-pointer items-center justify-center overflow-hidden border-0 rounded-0 transition-shadow mx-2 mx-md-2">
+                <div className="h-[26rem] w-[30rem]">
+                  <Card.Img src={image6} alt="" className="" />
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+
+                <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <Card.Title className=" home-section-title  font-bold text-white">
+                    Marketing With A Twist
+                  </Card.Title>
+
+                  <Card.Text className="home-section-content mt-14 text-white text-justify">
+                    Why follow the old P’s of marketing when you can access new
+                    C’s of connect, customize, curate, and creativity. We help
+                    you reach the masses and exponentially increase your digital
+                    marketing and sales with perfect digital marketing
+                    strategies.
+                  </Card.Text>
+
+                  <Button className="home-button-section">Read more</Button>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          <div className="row mt-4">
+            {/* Second Row */}
+
+            <div className="col-md-4 ">
+              <Card className="group relative cursor-pointer items-center justify-center overflow-hidden border-0 rounded-0 transition-shadow mx-2 mx-md-2">
+                <div className="h-[26rem] w-[30rem]">
+                  <Card.Img src={image7} alt="" className="" />
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+
+                <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <Card.Title
+                    className=" home-section-title  mb-5
+                      font-bold text-white"
+                  >
+                    Social Media Reach That You Need
+                  </Card.Title>
+
+                  <Card.Text className="home-section-content mt-4 text-white text-justify">
+                    Facebook, Instagram, Twitter, or LinkedIn, you name the
+                    social media account, and we will design a strategy to help
+                    increase your reach there. With genuine strategy, authentic
+                    increase in number, and income gain, we are here to help you
+                    conquer the social media platforms.
+                  </Card.Text>
+                </div>
+              </Card>
+            </div>
+
+            <div className="col-md-4 home-section-cards1">
+              <Card className="group relative cursor-pointer items-center justify-center overflow-hidden border-0 rounded-0 transition-shadow mx-2 mx-md-2">
+                <div className="h-[26rem] w-[30rem]">
+                  <Card.Img src={image8} alt="" className="" />
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+
+                <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <Card.Title className=" home-section-title  font-bold text-white mb-5">
+                    Futuristic Strategies A Big Yes
+                  </Card.Title>
+
+                  <Card.Text className=" home-section-content mt-8 text-white text-justify">
+                    We believe in strategic planning. A great brand works on
+                    evaluating today's results and planning for tomorrow, and we
+                    are no different. We take pride in designing and delivering
+                    excellence by creating strategies.
+                  </Card.Text>
+                </div>
+              </Card>
+            </div>
+
+            <div className="col-md-4 home-section-cards1">
+              <Card className="group relative cursor-pointer items-center justify-center overflow-hidden border-0 rounded-0 transition-shadow mx-2 mx-md-2">
+                <div className="h-[26rem] w-[30rem]">
+                  <Card.Img src={image9} alt="" className="" />
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+
+                <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <Card.Title className=" home-section-title  font-bold text-white">
+                    Exclusively Customised Services
+                  </Card.Title>
+
+                  <Card.Text className="home-section-content mt-4 text-white text-justify">
+                    No two things are similar, and so is your need. Designing a
+                    customized service that includes monthly plans, amazing
+                    designs, and discovery calls offers you the solutions for
+                    your every single need.
+                  </Card.Text>
+
+                  <Button className="home-button-section">Read more</Button>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+
+        {/* avatar parts */}
         <div className="Department-section ">
           <div className="wpb_wrapper p-5">
             <h2>Meet The Heads of Different Departments</h2>
@@ -683,8 +722,10 @@ export default function MainHome() {
                 <FontAwesomeIcon icon={faWalking} />
               </div>
               <div className="main-home-rating-section">
-              <span  className="main-home-rating-content">{Math.floor(projects)}</span>
-                  <span className="main-home-rating-content">+</span>
+                <span className="main-home-rating-content">
+                  {Math.floor(projects)}
+                </span>
+                <span className="main-home-rating-content">+</span>
                 <p className="main-home-rating-title">Projects</p>
               </div>
             </Col>
@@ -694,8 +735,10 @@ export default function MainHome() {
                 <FontAwesomeIcon icon={faPuzzlePiece} />
               </div>
               <div className="main-home-rating-section">
-              <span className="main-home-rating-content">{Math.floor(startups)}</span>
-                  <span className="main-home-rating-content">+</span>
+                <span className="main-home-rating-content">
+                  {Math.floor(startups)}
+                </span>
+                <span className="main-home-rating-content">+</span>
                 <p className="main-home-rating-title">Startups Association</p>
               </div>
             </Col>
@@ -705,8 +748,10 @@ export default function MainHome() {
                 <FontAwesomeIcon icon={faCamera} />
               </div>
               <div className="main-home-rating-section">
-              <span className="main-home-rating-content">{Math.floor(brands)}</span>
-                  <span className="main-home-rating-content">+</span>
+                <span className="main-home-rating-content">
+                  {Math.floor(brands)}
+                </span>
+                <span className="main-home-rating-content">+</span>
                 <p className="main-home-rating-title">Brands</p>
               </div>
             </Col>
@@ -716,8 +761,10 @@ export default function MainHome() {
                 <FontAwesomeIcon icon={faShieldHalved} />
               </div>
               <div className="main-home-rating-section">
-              <span className="main-home-rating-content">{Math.floor(clients)}</span>
-                  <span className="main-home-rating-content">+</span>
+                <span className="main-home-rating-content">
+                  {Math.floor(clients)}
+                </span>
+                <span className="main-home-rating-content">+</span>
                 <p className="main-home-rating-title">Satisfied Clients</p>
               </div>
             </Col>
@@ -730,9 +777,12 @@ export default function MainHome() {
           <Row className="mainhome-animated-cards">
             <Col md={4} className="mb-3">
               <div className="home-animated-card-content">
-                <FontAwesomeIcon icon={faUser} className="fa-2x" />
+                <FontAwesomeIcon
+                  icon={faUser}
+                  className="fa-2x home-animated-card-icons"
+                />
                 <h2 className="home-animated-card-heading mt-3">About Us</h2>
-                <p className="mt-3">
+                <p className="mt-3 home-animated-card-paragraph">
                   Explore the competitive leverage of the immense digital
                   universe with experts at Ace Chronicle and experience success
                   at its best.
@@ -806,7 +856,7 @@ export default function MainHome() {
       </div>
 
       {/* ********experience************/}
-      <Container>
+      {/* <Container>
         <Row className="d-flex align-items-center main-home-experience">
           <Col md={4}>
             <div>
@@ -819,7 +869,7 @@ export default function MainHome() {
             </div>
           </Col>
           <Col md={8}>
-            <p className="main-home-exp-paragraph1">
+            <p className="main-home-exp-paragraph1 text-justify">
               Ace Chronicle has worked with a diverse array of companies and
               individuals. We have helped businesses establish their websites,
               develop their customer base, create brand value, and revamp their
@@ -834,13 +884,13 @@ export default function MainHome() {
             </p>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
 
       {/* ******Steeper-start*******/}
       <div className="main-home-offer-bg">
         <Container>
           <Row className="pt-5 main-home-offer-container">
-            <Col md={6}>
+            <Col lg={6}>
               <h2 className="mainhome-offer-heading">What We Offer</h2>
               <h5 className="mainhome-offer-subheading">
                 We provide worldwide services.
@@ -905,7 +955,7 @@ export default function MainHome() {
                 </div>
               </div>
             </Col>
-            <Col md={6}>
+            <Col lg={6} className="fixed-offer-image">
               <div className="offer-image">
                 <img src={OfferImg}></img>
               </div>
@@ -924,8 +974,8 @@ export default function MainHome() {
           </Col>
           <Col md={6} className="mb-4 d-flex align-items-center">
             <div>
-              <h2 className="home-knowledge-heading">Knowledge Hub</h2>
-              <p className="mt-4 home-knowledge-paragraph">
+              <h2 className="home-knowledge-heading">Knowledge Center</h2>
+              <p className="mt-4 home-knowledge-paragraph text-justify">
                 We have experts on board, that is, avid bloggers and writers who
                 have been sharing their experience, knowledge, and expertise
                 through our blog posts. We’ve covered almost every topic under
@@ -946,81 +996,122 @@ export default function MainHome() {
 
       <div className="main-home-slider-bg client-slider">
         <Container>
-          <Row>
+          <Row className="">
             <h2 className="client-slider-heading">Testimonials</h2>
-            <Col md={{ span: 8, offset: 2 }} sm={12}>
+            <Col md={12}>
               <Slider {...settings}>
-                <div className="mt-5">
-                  <h2 className="client-slider-heading">Akhilesh</h2>
-                  <p className="client-slider-paragraph mt-4">
+                <div className="px-4 mt-5">
+                  <FontAwesomeIcon
+                    icon={faQuoteRight}
+                    className="fa-3x text-[#eee]"
+                  />
+                  <p className="client-slider-paragraph mt-3 text-justify">
                     We are a startup and were looking for someone who can help
                     us build a newsletter with well-researched content. After
                     trying on a couple of teams,we got in connection with Ace
-                    Chronicle. Our requirement was to have the weekly top news
-                    based on different segments compiled in a creative way in
-                    the letter. After initial meetings and all clarifications,
-                    we were very happy with the results. They offered us a
-                    perfectly designed newsletter with informative infographics,
-                    which we were looking for. Thank you for your service.
+                    Chronicle.Thank you for your service.
                   </p>
+                  <div className="flex">
+                    <div>
+                      <img src={Slide1}></img>
+                    </div>
+                    <div>
+                      <p className="pl-5 text-[#646e7a] mb-0">Jenna Johnson</p>
+                      <p className="pl-5 text-[#3b6d6e]">Designer</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="mt-5">
-                  <h2 className="client-slider-heading">Khushboo</h2>
-                  <p className="client-slider-paragraph mt-4">
-                    With timely uploads, edits, and trackable results, Ace
-                    Chronicle has helped us to grow our business positively in
-                    the digital arena. Good work and extremely upfront and
-                    proven results.
-                  </p>
-                </div>
-                <div className="mt-5">
-                  <h2 className="client-slider-heading">Prashant</h2>
-                  <p className="client-slider-paragraph mt-4">
-                    We needed someone to manage our social media platform in
-                    terms of posts on our website, Instagram handle, and other
-                    platforms. Ace Chronicle offered us the complete timeline in
-                    advance as to when and how the posts will go. With this
-                    clarity, it was easier for us to chart our way to social
-                    media management and reach. We are glad to be in association
-                    with them. Thank you for your service.
-                  </p>
-                </div>
-                <div className="mt-5">
-                  <h2 className="client-slider-heading">Abhinav</h2>
-                  <p className="client-slider-paragraph mt-4">
+
+                <div className="px-4 mt-5">
+                  <FontAwesomeIcon
+                    icon={faQuoteRight}
+                    className="fa-3x text-[#eee]"
+                  />
+                  <p className="client-slider-paragraph mt-3 text-justify">
                     We are a startup and were looking for someone who can help
                     us build a newsletter with well-researched content. After
-                    trying on a couple of teams, we got in connection with Ace
-                    Chronicle. Our requirement was to have the weekly top news
-                    based on different segments compiled in a creative way in
-                    the letter. After initial meetings and all clarifications,
-                    we were very happy with the results. They offered us a
-                    perfectly designed newsletter with informative infographics,
-                    which we were looking for. Thank you for your service.{" "}
+                    trying on a couple of teams,we got in connection with Ace
+                    Chronicle.Thank you for your service.
                   </p>
+                  <div className="flex">
+                    <div>
+                      <img src={Slide2}></img>
+                    </div>
+                    <div>
+                      <p className="pl-5 text-[#646e7a] mb-0">
+                        Whitney Nilsson
+                      </p>
+                      <p className="pl-5 text-[#3b6d6e]">Manager</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="mt-5">
-                  <h2 className="client-slider-heading">Kunal</h2>
-                  <p className="client-slider-paragraph mt-4">
-                    We are thrilled to work with Ace Chronicle for the
-                    translation services. However, our requirement was simple
-                    yet specific. We needed a few of our videos to be converted
-                    into English but with similar essence and simplicity. The
-                    team worked on the described format and offered us simple
-                    and precise content for the videos, which was amazing.
-                    Indeed, working with you was great and looking forward to
-                    connecting soon.
+
+                <div className="px-4 mt-5">
+                  <FontAwesomeIcon
+                    icon={faQuoteRight}
+                    className="fa-3x text-[#eee]"
+                  />
+                  <p className="client-slider-paragraph mt-3 text-justify">
+                    We are a startup and were looking for someone who can help
+                    us build a newsletter with well-researched content. After
+                    trying on a couple of teams,we got in connection with Ace
+                    Chronicle.Thank you for your service.
                   </p>
+                  <div className="flex">
+                    <div>
+                      <img src={Slide3}></img>
+                    </div>
+                    <div>
+                      <p className="pl-5 text-[#646e7a] mb-0">Mike Lanning</p>
+                      <p className="pl-5 text-[#3b6d6e]">TechCrunch</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="mt-5">
-                  <h2 className="client-slider-heading">Deepak</h2>
-                  <p className="client-slider-paragraph mt-4">
-                    The team has been quite supportive and has helped us to make
-                    our way through the cutting-edge competition. Seriously, it
-                    is a pleasure to work with them and have a chance to get
-                    customized services. Looking forward to continued
-                    association.
+
+                <div className="px-4 mt-5">
+                  <FontAwesomeIcon
+                    icon={faQuoteRight}
+                    className="fa-3x text-[#eee]"
+                  />
+                  <p className="client-slider-paragraph mt-3 text-justify">
+                    We are a startup and were looking for someone who can help
+                    us build a newsletter with well-researched content. After
+                    trying on a couple of teams,we got in connection with Ace
+                    Chronicle.Thank you for your service.
                   </p>
+                  <div className="flex">
+                    <div>
+                      <img src={Slide4}></img>
+                    </div>
+                    <div>
+                      <p className="pl-5 text-[#646e7a] mb-0">
+                        Whitney Nilsson
+                      </p>
+                      <p className="pl-5 text-[#3b6d6e]">Manager</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="px-4 mt-5">
+                  <FontAwesomeIcon
+                    icon={faQuoteRight}
+                    className="fa-3x text-[#eee]"
+                  />
+                  <p className="client-slider-paragraph mt-3 text-justify">
+                    We are a startup and were looking for someone who can help
+                    us build a newsletter with well-researched content. After
+                    trying on a couple of teams,we got in connection with Ace
+                    Chronicle.Thank you for your service.
+                  </p>
+                  <div className="flex">
+                    <div>
+                      <img src={Slide5}></img>
+                    </div>
+                    <div>
+                      <p className="pl-5 text-[#646e7a] mb-0">Dustin Jones</p>
+                      <p className="pl-5 text-[#3b6d6e]">Designer</p>
+                    </div>
+                  </div>
                 </div>
               </Slider>
             </Col>
@@ -1051,7 +1142,9 @@ export default function MainHome() {
         <Container>
           <div className="home-knowledge-container">
             <Row>
-              <h2 className="knowledge-center-heading mt-5">Knowledge Center</h2>
+              <h2 className="knowledge-center-heading mt-5">
+                Knowledge Center
+              </h2>
               <Col md={4} className="mt-5">
                 <div className="knowledge-center-images">
                   <img src={Blog1}></img>
