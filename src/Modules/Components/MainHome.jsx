@@ -984,7 +984,7 @@ export default function MainHome() {
                 blogging itself. Dive into our knowledge hub to find anything
                 and everything that you’ve ever wanted to read about.&nbsp;
               </p>
-              <Link>
+              <Link to="blog">
                 <Button className="knowledge-button">Click Here</Button>
               </Link>
             </div>
