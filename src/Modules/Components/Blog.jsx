@@ -1,30 +1,47 @@
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import {Link} from 'react-router-dom';
-import './Blog.css';
-import BeautyImg from './BlogImgs/beauty-blog-img1.jpg';
-import BeautyImg1 from './BlogImgs/beauty-blog-img2.jpg';
-import BeautyImg2 from './BlogImgs/beauty-blog-img3.jpg';
-import ShopFurniture from './BlogImgs/shop-furniture-6.jpg';
-import ShopFurniture1 from './BlogImgs/shop-furniture-5.jpg';
-import ShopFurniture2 from './BlogImgs/shop-furniture-4.jpg';
-import ShopFurniture3 from './BlogImgs/shop-furniture-3.jpg';
-import ShopFurniture4 from './BlogImgs/shop-furniture-2.jpg';
-import ShopFurniture5 from './BlogImgs/shop-furniture-1.jpg';
-import ShopBlog from './BlogImgs/blog-img-1.jpg';
-import footer1 from './BlogImgs/footer1.jpg';
-import footer2 from './BlogImgs/footer2.jpg';
-import footer3 from './BlogImgs/footer3.jpg';
-import footer4 from './BlogImgs/footer4.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faPinterestP, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-
+import React, { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "./Blog.css";
+import BeautyImg from "./BlogImgs/beauty-blog-img1.jpg";
+import BeautyImg1 from "./BlogImgs/beauty-blog-img2.jpg";
+import BeautyImg2 from "./BlogImgs/beauty-blog-img3.jpg";
+import ShopFurniture from "./BlogImgs/shop-furniture-6.jpg";
+import ShopFurniture1 from "./BlogImgs/shop-furniture-5.jpg";
+import ShopFurniture2 from "./BlogImgs/shop-furniture-4.jpg";
+import ShopFurniture3 from "./BlogImgs/shop-furniture-3.jpg";
+import ShopFurniture4 from "./BlogImgs/shop-furniture-2.jpg";
+import ShopFurniture5 from "./BlogImgs/shop-furniture-1.jpg";
+import ShopBlog from "./BlogImgs/blog-img-1.jpg";
+import footer1 from "./BlogImgs/footer1.jpg";
+import footer2 from "./BlogImgs/footer2.jpg";
+import footer3 from "./BlogImgs/footer3.jpg";
+import footer4 from "./BlogImgs/footer4.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebook,
+  faPinterestP,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import BlogBanner from "./BlogImgs/blog-banner-image1.png";
+import Blog1 from "./BlogImgs/blog-img-1.jpg";
+import Blog2 from "./BlogImgs/blog-img-2.jpg";
+import Blog3 from "./BlogImgs/blog-img-3.jpg";
+import Blog4 from "./BlogImgs/blog-img-4.jpg";
+import Blog5 from "./BlogImgs/blog-img-5.jpg";
+import Blog6 from "./BlogImgs/blog-img-6.jpg";
+import Blog7 from "./BlogImgs/blog-img-7.jpg";
+import Blog8 from "./BlogImgs/blog-img-8.jpg";
 
 const Blog = () => {
+  const [toggle, setToggle] = useState(1);
+  function Toggle(id) {
+    setToggle(id);
+  }
   return (
     <>
-    <div className='blog-bg-color'>
+      {/* <div className='blog-bg-color'>
     <Container>
       <Row className='p-3'>
         <Col md={6}>
@@ -383,9 +400,407 @@ const Blog = () => {
           
         </Row>
       </Container>
-    </div>
-    </>
-  )
-}
+    </div>  */}
 
-export default Blog
+      <div
+        className="content-section1 position-relative d-flex justify-content-center
+       align-items-center"
+      >
+        <img
+          src={BlogBanner}
+          alt="Content Banner"
+          className="content-section-image1"
+        />
+
+        <div className="position-absolute">
+          <h1 className="text-white text-center blog-content-heading">An Awesome Blog</h1>
+        </div>
+      </div>
+
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col">
+            <ul className="blog-section-menu p-0">
+              <li
+                className={`blog-item ${toggle === 1 ? "active" : ""}`}
+                onClick={() => Toggle(1)}
+              >
+                All
+              </li>
+              <li
+                className={`blog-item ${toggle === 2 ? "active" : ""}`}
+                onClick={() => Toggle(2)}
+              >
+                Ideas
+              </li>
+              <li
+                className={`blog-item ${toggle === 3 ? "active" : ""}`}
+                onClick={() => Toggle(3)}
+              >
+                Innovation
+              </li>
+              <li
+                className={`blog-item ${toggle === 4 ? "active" : ""}`}
+                onClick={() => Toggle(4)}
+              >
+                Interview
+              </li>
+              <li
+                className={`blog-item ${toggle === 5 ? "active" : ""}`}
+                onClick={() => Toggle(5)}
+              >
+                Tech
+              </li>
+              <li
+                className={`blog-item ${toggle === 6 ? "active" : ""}`}
+                onClick={() => Toggle(6)}
+              >
+                Travel
+              </li>
+            </ul>
+
+            <div className={toggle === 1 ? "show-content" : "content"}>
+              <div className="row mt-5">
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog1}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">What Your Browser Says About You</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog2}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">New Trends In Responsive Design</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog3}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">
+                        About Bicycle Touring<br></br> Pro
+                      </h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="">
+                    <img src={Blog4}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">10 Tips For Traveling With Friends</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row mt-3">
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog5}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">Tips & Tricks For The Fashion Blogger</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog6}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">
+                        Working Hours Everyday The Same Happy Days
+                      </h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog7}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">Turn Your Dog Into A Social Media Guru</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="">
+                    <img src={Blog8}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">15 Signs You’re In Love With UX Design</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row mt-5 mb-5">
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <FontAwesomeIcon
+                      icon={faQuoteRight}
+                      className="fa-4x text-[#848892]"
+                    />
+                    <h2 className="mt-3">
+                      The details are not the details. They make the design.
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <h5 className="mt-3">
+                      Create An Exceptional Blog For Exceptional Writing
+                    </h5>
+                    <h6 className="text-[#aab3bc] mt-3">29 September 2016 </h6>
+                    <p className="text-[#848892]">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod...
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <FontAwesomeIcon
+                      icon={faQuoteRight}
+                      className="fa-4x text-[#848892]"
+                    />
+                    <h2 className="mt-3">
+                      Create a gorgeous blog that will capture the attention
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <h5 className="mt-3">
+                      Motion Animation And Augmented Reality
+                    </h5>
+                    <h6 className="text-[#aab3bc] mt-3">29 September 2016 </h6>
+                    <p className="text-[#848892]">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={toggle === 2 ? "show-content" : "content"}>
+              <div className="row mt-5 mb-5">
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <FontAwesomeIcon
+                      icon={faQuoteRight}
+                      className="fa-4x text-[#848892]"
+                    />
+                    <h2 className="mt-3">
+                      The details are not the details. They make the design.
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <h5 className="mt-3">
+                      Create An Exceptional Blog For Exceptional Writing
+                    </h5>
+                    <h6 className="text-[#aab3bc] mt-3">29 September 2016 </h6>
+                    <p className="text-[#848892]">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={toggle === 3 ? "show-content" : "content"}>
+              <div className="row mt-5 mb-5">
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog1}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">What Your Browser Says About You</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog2}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">New Trends In Responsive Design</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={toggle === 4 ? "show-content" : "content"}>
+              <div className="row mt-5 mb-5">
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <FontAwesomeIcon
+                      icon={faQuoteRight}
+                      className="fa-4x text-[#848892]"
+                    />
+                    <h2 className="mt-3">
+                      Create a gorgeous blog that will capture the attention
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <FontAwesomeIcon
+                      icon={faQuoteRight}
+                      className="fa-4x text-[#848892]"
+                    />
+                    <h2 className="mt-3">
+                      The details are not the details. They make the design.
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="col-md-3">
+                  <div className="blog-shade-image">
+                    <h5 className="mt-3">
+                      Create An Exceptional Blog For Exceptional Writing
+                    </h5>
+                    <h6 className="text-[#aab3bc] mt-3">29 September 2016 </h6>
+                    <p className="text-[#848892]">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={toggle === 5 ? "show-content" : "content"}>
+              <div className="row mt-5 mb-5">
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog2}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">New Trends In Responsive Design</h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={toggle === 6 ? "show-content" : "content"}>
+              <div className="row mt-5 mb-5">
+                <div className="col-md-3 mb-3">
+                  <div className="">
+                    <img src={Blog3}></img>
+                    <div class=" blog-section-card p-3">
+                      <h5 class="">
+                        About Bicycle Touring<br></br> Pro
+                      </h5>
+                      <h6 className="text-[#aab3bc] mt-3">
+                        29 September 2016{" "}
+                      </h6>
+                      <p className="text-[#848892]">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Blog;

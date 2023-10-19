@@ -29,6 +29,9 @@ import SliderIcon2 from "./Images/slider-icon2.jpg";
 import SliderIcon3 from "./Images/slider-icon3.jpg";
 import SliderIcon4 from "./Images/slider-icon4.jpg";
 import SliderIcon5 from "./Images/slider-icon5.jpg";
+import SliderImg1 from "./Images/Slider-img1.png";
+import SliderImg2 from "./Images/Slider-img2.png";
+import SliderImg3 from "./Images/Slider-img3.png";
 
 const Home = () => {
   const [projects, setProjects] = useState(0);
@@ -85,79 +88,86 @@ const Home = () => {
   };
   return (
     <>
-      <div
+        {/* Carousels */}
+        <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={image1} alt="my image" className="slider-img" />
+          <div class="carousel-item active ">
+            <img src={SliderImg1} alt="my image" className="slider-img" />
 
-            <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
-              <h1>
-                <b>
-                  Experience The Digital
-                  <br />
-                  Power
-                </b>
-              </h1>
-              <p className="d-none d-sm-block mt-4">
-                Ace Chronicle is here to take your business up digitally. With a
-                team of content creators, website designers, logo creators, and
-                digital managers, we are here to help you explore the digital
-                ends to take your business to new heights.
-              </p>
-              <Button className="mt-4" variant="outline-light">
-                <b>LEARN MORE</b>
-              </Button>{" "}
-            </Carousel.Caption>
+            <div className="d-flex justify-content-center items-center">
+              <Carousel.Caption className="slider-caption animate__animated animate__zoomIn   ">
+                <h1 className="home-carousel-text">
+                  <b>
+                    Experience The Digital
+                    <br />
+                    Power
+                  </b>
+                </h1>
+                <p className="d-none d-sm-block mt-4  home-carousel-para">
+                  Ace Chronicle is here to take your business up digitally. With
+                  a team of content creators, website designers, logo creators,
+                  and digital managers, we are here to help you explore the
+                  digital.
+                </p>
+                <Button className="mt-4" variant="outline-light">
+                  <b>LEARN MORE</b>
+                </Button>{" "}
+              </Carousel.Caption>
+            </div>
           </div>
 
           <div class="carousel-item">
-            <img src={image2} alt="my image" className="slider-img" />
+            <img src={SliderImg2} alt="my image" className="slider-img" />
 
-            <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
-              <h1>
-                <b>
-                  Explore The Innovation
-                  <br />
-                  and Creativity{" "}
-                </b>
-              </h1>
-              <p className="d-none d-sm-block mt-4">
-                A unique website, creative logo, perfect brochures, and content
-                that connects is what you need to experience the digital power.
-                With Ace Chronicle, we are here to amaze you at every single
-                stage of your success story.
-              </p>
-              <Button className="mt-4" variant="outline-light">
-                <b>LEARN MORE</b>
-              </Button>{" "}
-            </Carousel.Caption>
+            <div className="d-flex justify-content-center items-center">
+              <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
+                <h1 className="home-carousel-text">
+                  <b>
+                    Explore The Innovation
+                    <br />
+                    and Creativity{" "}
+                  </b>
+                </h1>
+                <p className="d-none d-sm-block mt-4 home-carousel-para">
+                  A unique website, creative logo, perfect brochures, and
+                  content that connects is what you need to experience the
+                  digital power. With Ace Chronicle, we are here to amaze you at
+                  every single stage of your success story.
+                </p>
+                <Button className="mt-4" variant="outline-light">
+                  <b>LEARN MORE</b>
+                </Button>{" "}
+              </Carousel.Caption>
+            </div>
           </div>
 
           <div class="carousel-item">
-            <img src={image3} alt="my image" className="slider-img" />
+            <img src={SliderImg3} alt="my image" className="slider-img" />
 
-            <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
-              <h1>
-                <b>
-                  Excel The Competitive
-                  <br />
-                  Edge
-                </b>
-              </h1>
-              <p className="d-none d-sm-block mt-4">
-                With the competition rising high, we are here to help you excel
-                at the competitive edge. With the customized and personalized
-                strategies to drive your business reach and success, Ace
-                Chronicle is here to offer you all the advantages you need.
-              </p>
-              <Button className="mt-4" variant="outline-light">
-                <b>LEARN MORE</b>
-              </Button>{" "}
-            </Carousel.Caption>
+            <div className="d-flex justify-content-center items-center">
+              <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
+                <h1 className="home-carousel-text">
+                  <b>
+                    Excel The Competitive
+                    <br />
+                    Edge
+                  </b>
+                </h1>
+                <p className="d-none d-sm-block mt-4 home-carousel-para ">
+                  With the competition rising high, we are here to help you
+                  excel at the competitive edge. With the customized and
+                  personalized strategies to drive your business reach and
+                  success.
+                </p>
+                <Button className="mt-4" variant="outline-light">
+                  <b>LEARN MORE</b>
+                </Button>{" "}
+              </Carousel.Caption>
+            </div>
           </div>
         </div>
 
@@ -182,7 +192,7 @@ const Home = () => {
 
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+        </div>
 
       {/* cards */}
 

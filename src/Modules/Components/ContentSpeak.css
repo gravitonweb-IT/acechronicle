@@ -1,34 +1,88 @@
-.content-section {
-  position: relative;
-}
-
-.content-section-image {
-  height: auto;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+/* banner-part */
 @media screen and (max-width: 768px) {
   .content-section-image {
-    height: 300px;
+    height: 200px;
   }
 }
 
-.content-section-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: white;
-  font-weight: 800;
-}
+/* 2nd-second-start */
 .content-second-section {
-    background-color: #24262a;
+  background-color: #24262a;
 }
-.content-list-section{
-    list-style-type: disc;
-    color: #848892;
+.content-list-section {
+  list-style-type: disc;
+  color: #848892;
 }
-  
+
+/* 3rd-part-start */
+.card.package-card-section {
+  border-radius: 14px;
+}
+.package-card-text {
+  background-color: #3b6d6e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 14px;
+}
+.card-package-sub {
+  font-size: 30px;
+  line-height: 32px;
+  position: relative;
+  color: #24262a;
+  vertical-align: bottom;
+  font-weight: 500;
+  bottom: 7px;
+  left: 5px;
+}
+.card-package-price {
+  font-size: 50px;
+  line-height: 58px;
+  vertical-align: middle;
+  color: #24262a;
+  font-weight: 500;
+  padding-right: 14px;
+}
+.card-package-mark {
+  position: relative;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #797979;
+  text-transform: lowercase;
+  display: block;
+}
+.card-package-list {
+  background-color: #eceef1;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #797979;
+}
+.card-package-list1 {
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #797979;
+}
+.card-package-button {
+  background-color: #aab2bd;
+  border-color: #aab2bd;
+  color: white;
+  padding: 0 24px;
+  font-size: 12px;
+  line-height: 43px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.package-heading-line:after {
+  content: "";
+  display: block;
+  padding-top: 10px;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 4px solid #3b6d6e;
+}

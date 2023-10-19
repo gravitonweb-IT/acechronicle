@@ -6,8 +6,15 @@
 }
 
 .slider-caption {
-  text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 160px;
+}
+
+.home-carousel-text {
+  font-size: 50px !important;
+}
+
+.home-carousel-para {
+  font-size: 20px;
 }
 
 /* cards */
@@ -47,14 +54,14 @@
   padding: 20px;
 }
 
-/* Next cards */
+/* animated cards */
 .home-section-title {
   font-size: 30px !important;
 }
 
 .home-button-section {
   background-color: #3b6d6e !important;
-  border:none !important;
+  border: none !important;
 }
 
 .home-button-section:hover {
@@ -75,7 +82,6 @@
     margin-top: 20px !important;
   }
 }
-
 /* h parts */
 
 .Department-section {
@@ -137,11 +143,7 @@
   color: #d4d4d4;
   padding: 8px;
 }
-.avatar-paragraph {
-  font-size: 15px;
-  color: #848892;
-  font-weight: 400;
-}
+
 .avatar-section1 {
   padding: 40px 40px 40px 40px;
   background-color: #fff;
@@ -166,6 +168,7 @@
   color: #000;
   text-align: center;
 }
+
 .avatar-profile-designation1 {
   color: rgba(0, 0, 0, 0.5);
   font-size: 13px;
@@ -243,6 +246,8 @@
 .main-home-rating-title {
   color: #ffffff;
 }
+
+/* experience */
 .main-home-experience {
   height: 60vh;
   padding: 0 60px;
@@ -272,6 +277,8 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+/* offer */
 .main-home-offer-bg {
   background-color: #24262a;
 }
@@ -384,13 +391,24 @@
 .progress-line1.figma span {
   width: 99%;
 }
+
+/* knowledge */
 .knowledge-image {
   width: 100%;
   height: auto;
 }
 .knowledge-image img {
-  width: 100%;
+  width: 300px;
   height: auto;
+  transform: translateX(-60px);
+}
+
+@media screen and (max-width: 576px) {
+  .knowledge-image img {
+    width: 150px;
+    height: auto;
+    transform: translateX(0px);
+  }
 }
 .home-knowledge-heading {
   color: #3b6d6e;
@@ -414,6 +432,8 @@
   border-radius: 0px !important;
   font-weight: 500 !important;
 }
+
+/* slider */
 .main-home-slider-bg {
   background-color: #24262a;
   padding: 40px;
@@ -436,6 +456,8 @@
     display: none;
   }
 }
+
+/* blog */
 .main-home-bg-color {
   background-color: #24262a;
 }
@@ -482,4 +504,23 @@
   .home-knowledge-container {
     padding: 0px;
   }
+}
+/* newsletter */
+.newsletter-section-heading {
+  font-family: "Playfair Display";
+}
+
+.newsletter-section-para {
+  width: 500px !important;
+}
+
+.banner-button-section {
+  border-width: 4px;
+}
+
+.home-banner-section {
+  background-image: url("./MainHomeImgs/newsletter-img1.jpg");
+  height: 100vh;
+  background-position: left;
+  background-size: cover;
 }

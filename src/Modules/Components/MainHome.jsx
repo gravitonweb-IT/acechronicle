@@ -36,6 +36,10 @@ import Slide4 from "./MainHomeImgs/testimonials-image4.png";
 import Slide5 from "./MainHomeImgs/testimonials-image5.png";
 import Avatar1 from "./Images/avatar1.jpg";
 import Avatar2 from "./Images/avatar2.jpg";
+import SliderImg1 from "./Images/Slider-img1.png";
+import SliderImg2 from "./Images/Slider-img2.png";
+import SliderImg3 from "./Images/Slider-img3.png";
+import Knowledge2 from "./MainHomeImgs/facialmassage2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css";
 import {
@@ -67,8 +71,8 @@ export default function MainHome() {
   const [brands, setBrands] = useState(0);
   const [clients, setClients] = useState(0);
   const finalValues = [1200, 580, 20, 1000];
-  const animationDuration = 4000; // Animation duration in milliseconds
-  const animationSteps = 40; // Number of animation steps
+  const animationDuration = 4000;
+  const animationSteps = 40;
 
   useEffect(() => {
     const stepValue = finalValues.map((value) => value / animationSteps);
@@ -133,6 +137,7 @@ export default function MainHome() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+
   return (
     <>
       {/* Carousels */}
@@ -142,73 +147,79 @@ export default function MainHome() {
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={image1} alt="my image" className="slider-img" />
+          <div class="carousel-item active ">
+            <img src={SliderImg1} alt="my image" className="slider-img" />
 
-            <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
-              <h1>
-                <b>
-                  Experience The Digital
-                  <br />
-                  Power
-                </b>
-              </h1>
-              <p className="d-none d-sm-block mt-4">
-                Ace Chronicle is here to take your business up digitally. With a
-                team of content creators, website designers, logo creators, and
-                digital managers, we are here to help you explore the digital
-                ends to take your business to new heights.
-              </p>
-              <Button className="mt-4" variant="outline-light">
-                <b>LEARN MORE</b>
-              </Button>{" "}
-            </Carousel.Caption>
+            <div className="d-flex justify-content-center items-center">
+              <Carousel.Caption className="slider-caption animate__animated animate__zoomIn   ">
+                <h1 className="home-carousel-text">
+                  <b>
+                    Experience The Digital
+                    <br />
+                    Power
+                  </b>
+                </h1>
+                <p className="d-none d-sm-block mt-4  home-carousel-para">
+                  Ace Chronicle is here to take your business up digitally. With
+                  a team of content creators, website designers, logo creators,
+                  and digital managers, we are here to help you explore the
+                  digital.
+                </p>
+                <Button className="mt-4" variant="outline-light">
+                  <b>LEARN MORE</b>
+                </Button>{" "}
+              </Carousel.Caption>
+            </div>
           </div>
 
           <div class="carousel-item">
-            <img src={image2} alt="my image" className="slider-img" />
+            <img src={SliderImg2} alt="my image" className="slider-img" />
 
-            <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
-              <h1>
-                <b>
-                  Explore The Innovation
-                  <br />
-                  and Creativity{" "}
-                </b>
-              </h1>
-              <p className="d-none d-sm-block mt-4">
-                A unique website, creative logo, perfect brochures, and content
-                that connects is what you need to experience the digital power.
-                With Ace Chronicle, we are here to amaze you at every single
-                stage of your success story.
-              </p>
-              <Button className="mt-4" variant="outline-light">
-                <b>LEARN MORE</b>
-              </Button>{" "}
-            </Carousel.Caption>
+            <div className="d-flex justify-content-center items-center">
+              <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
+                <h1 className="home-carousel-text">
+                  <b>
+                    Explore The Innovation
+                    <br />
+                    and Creativity{" "}
+                  </b>
+                </h1>
+                <p className="d-none d-sm-block mt-4 home-carousel-para">
+                  A unique website, creative logo, perfect brochures, and
+                  content that connects is what you need to experience the
+                  digital power. With Ace Chronicle, we are here to amaze you at
+                  every single stage of your success story.
+                </p>
+                <Button className="mt-4" variant="outline-light">
+                  <b>LEARN MORE</b>
+                </Button>{" "}
+              </Carousel.Caption>
+            </div>
           </div>
 
           <div class="carousel-item">
-            <img src={image3} alt="my image" className="slider-img" />
+            <img src={SliderImg3} alt="my image" className="slider-img" />
 
-            <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
-              <h1>
-                <b>
-                  Excel The Competitive
-                  <br />
-                  Edge
-                </b>
-              </h1>
-              <p className="d-none d-sm-block mt-4">
-                With the competition rising high, we are here to help you excel
-                at the competitive edge. With the customized and personalized
-                strategies to drive your business reach and success, Ace
-                Chronicle is here to offer you all the advantages you need.
-              </p>
-              <Button className="mt-4" variant="outline-light">
-                <b>LEARN MORE</b>
-              </Button>{" "}
-            </Carousel.Caption>
+            <div className="d-flex justify-content-center items-center">
+              <Carousel.Caption className="slider-caption animate__animated animate__zoomIn">
+                <h1 className="home-carousel-text">
+                  <b>
+                    Excel The Competitive
+                    <br />
+                    Edge
+                  </b>
+                </h1>
+                <p className="d-none d-sm-block mt-4 home-carousel-para ">
+                  With the competition rising high, we are here to help you
+                  excel at the competitive edge. With the customized and
+                  personalized strategies to drive your business reach and
+                  success.
+                </p>
+                <Button className="mt-4" variant="outline-light">
+                  <b>LEARN MORE</b>
+                </Button>{" "}
+              </Carousel.Caption>
+            </div>
           </div>
         </div>
 
@@ -298,7 +309,7 @@ export default function MainHome() {
           </Row>
         </Container>
 
-        {/* next cards      */}
+        {/* animated-cards*/}
         <div className="container-fluid">
           <div className="row">
             {/* First Row */}
@@ -352,7 +363,7 @@ export default function MainHome() {
                   </Card.Text>
 
                   <Link to="/designpop">
-                  <Button className="home-button-section">Read more</Button>
+                    <Button className="home-button-section">Read more</Button>
                   </Link>
                 </div>
               </Card>
@@ -411,7 +422,7 @@ export default function MainHome() {
                   </Card.Text>
 
                   <Link to="/markettwist">
-                  <Button className="home-button-section">Read more</Button>
+                    <Button className="home-button-section">Read more</Button>
                   </Link>
                 </div>
               </Card>
@@ -460,8 +471,8 @@ export default function MainHome() {
                     your every single need.
                   </Card.Text>
 
-                  <Link to="/exclusive"> 
-                  <Button className="home-button-section">Read more</Button>
+                  <Link to="/exclusive">
+                    <Button className="home-button-section">Read more</Button>
                   </Link>
                 </div>
               </Card>
@@ -473,7 +484,7 @@ export default function MainHome() {
         <div className="Department-section ">
           <div className="wpb_wrapper p-5">
             <h2>Meet The Heads of Different Departments</h2>
-            <p className=" mt-4">
+            <p className=" mt-4 mb-1">
               It’s time to meet our heads of the different departments who are
               on their tiptoes to offer you their service and help you with
               achieving success.
@@ -718,7 +729,7 @@ export default function MainHome() {
         </div>
       </div>
 
-      {/* **********rates**************/}
+      {/*rates*/}
 
       <div className="main-home-rating">
         <Container>
@@ -777,7 +788,8 @@ export default function MainHome() {
           </Row>
         </Container>
       </div>
-      {/* ***********cards********** */}
+
+      {/*cards*/}
       <div className="home-animated-containers">
         <Container fluid>
           <Row className="mainhome-animated-cards">
@@ -820,7 +832,7 @@ export default function MainHome() {
             </Col>
           </Row>
 
-          <Row className="mt-5">
+          <Row className="mt-3">
             <Col md={4} className="mb-3">
               <div className="home-animated-card-content">
                 <FontAwesomeIcon icon={faAnchor} className="fa-2x" />
@@ -861,7 +873,8 @@ export default function MainHome() {
         </Container>
       </div>
 
-      {/* ********experience************/}
+      {/*experience*/}
+
       {/* <Container>
         <Row className="d-flex align-items-center main-home-experience">
           <Col md={4}>
@@ -892,7 +905,7 @@ export default function MainHome() {
         </Row>
       </Container> */}
 
-      {/* ******Steeper-start*******/}
+      {/*Steeper-start*/}
       <div className="main-home-offer-bg">
         <Container>
           <Row className="pt-5 main-home-offer-container">
@@ -970,12 +983,12 @@ export default function MainHome() {
         </Container>
       </div>
 
-      {/* *******knowledge-start*****/}
+      {/*knowledge-start*/}
       <Container>
         <Row className="mt-3">
           <Col md={6}>
-            <div className="knowledge-image">
-              <img src={KnowledgeImg}></img>
+            <div className="knowledge-image d-flex justify-content-center">
+              <img src={Knowledge2}></img>
             </div>
           </Col>
           <Col md={6} className="mb-4 d-flex align-items-center">
@@ -998,7 +1011,7 @@ export default function MainHome() {
         </Row>
       </Container>
 
-      {/******slider1-start*****/}
+      {/*slider1-start*/}
 
       <div className="main-home-slider-bg client-slider">
         <Container>
@@ -1034,10 +1047,10 @@ export default function MainHome() {
                     className="fa-3x text-[#eee]"
                   />
                   <p className="client-slider-paragraph mt-3 text-justify">
-                    We are a startup and were looking for someone who can help
-                    us build a newsletter with well-researched content. After
-                    trying on a couple of teams,we got in connection with Ace
-                    Chronicle.Thank you for your service.
+                    We needed someone to manage our social media platform in
+                    terms of posts on our website, Instagram handle, and other
+                    platforms. Ace Chronicle offered us the complete timeline in
+                    advance as to when and how the posts will go.
                   </p>
                   <div className="flex">
                     <div>
@@ -1058,10 +1071,10 @@ export default function MainHome() {
                     className="fa-3x text-[#eee]"
                   />
                   <p className="client-slider-paragraph mt-3 text-justify">
-                    We are a startup and were looking for someone who can help
-                    us build a newsletter with well-researched content. After
-                    trying on a couple of teams,we got in connection with Ace
-                    Chronicle.Thank you for your service.
+                    With timely uploads, edits, and trackable results, Ace
+                    Chronicle has helped us to grow our business positively in
+                    the digital arena. Good work and extremely upfront and
+                    proven results.Thank you for your service.
                   </p>
                   <div className="flex">
                     <div>
@@ -1080,10 +1093,11 @@ export default function MainHome() {
                     className="fa-3x text-[#eee]"
                   />
                   <p className="client-slider-paragraph mt-3 text-justify">
-                    We are a startup and were looking for someone who can help
-                    us build a newsletter with well-researched content. After
-                    trying on a couple of teams,we got in connection with Ace
-                    Chronicle.Thank you for your service.
+                    Finding quality content that's also optimized for SEO
+                    purposes has been one of the biggest pain points for our SEO
+                    services. We were relieved when we came in contact with Ace
+                    Chronicle .It turned out to be so great for the actual
+                    content creation.
                   </p>
                   <div className="flex">
                     <div>
@@ -1104,10 +1118,10 @@ export default function MainHome() {
                     className="fa-3x text-[#eee]"
                   />
                   <p className="client-slider-paragraph mt-3 text-justify">
-                    We are a startup and were looking for someone who can help
-                    us build a newsletter with well-researched content. After
-                    trying on a couple of teams,we got in connection with Ace
-                    Chronicle.Thank you for your service.
+                    The team has been quite supportive and has helped us to make
+                    our way through the cutting-edge competition. Seriously, it
+                    is a pleasure to work with them and have a chance to get
+                    customized services.
                   </p>
                   <div className="flex">
                     <div>
@@ -1125,7 +1139,49 @@ export default function MainHome() {
         </Container>
       </div>
 
-      {/*******slider2-start******/}
+      {/* newsletter-start */}
+
+      <div
+        className="home-banner-section d-none d-lg-block"
+        id="newsletter-banner-parallax"
+      >
+        <div className="newsletter-section1 position-relative ">
+          <div className="position-absolute top-40 start-50  newsletter-section-content ">
+            <h1 className="text-white font-bold newsletter-section-heading">
+              SUBSCRIBE TO OUR
+              <br /> NEWSLETTER
+            </h1>
+
+            <p className="text-white newsletter-section-para ">
+              <span className="">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation this content.
+              </span>
+            </p>
+
+            <form>
+              <div className="mb-3">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email*"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="btn btn-outline-light mt-3 banner-button-section"
+              >
+                Signup to Newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/*slider2-start*/}
       <div className="client-slider">
         <Container>
           <Row className="mt-5 mb-5">
@@ -1143,7 +1199,7 @@ export default function MainHome() {
         </Container>
       </div>
 
-      {/*****blog-start******/}
+      {/*blog-start*/}
       <div className="main-home-bg-color">
         <Container>
           <div className="home-knowledge-container">

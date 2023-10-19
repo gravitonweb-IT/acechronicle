@@ -20,7 +20,6 @@ function App() {
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route index path="/" element={<MainHome />} />
         <Route index path="/home" element={<Home />} />

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Contact.css";
+import ContactBanner from "./contentImg/contact-banner-image1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -20,7 +21,7 @@ export default function Contact() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
   const [textarea, setTextArea] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,7 +29,7 @@ export default function Contact() {
       firstName,
       lastName,
       email,
-      password,
+      phone,
       textarea,
     });
 
@@ -36,29 +37,23 @@ export default function Contact() {
     setFirstName("");
     setLastName("");
     setEmail("");
-    setPassword("");
+    setPhone("");
     setTextArea("");
   };
 
   return (
     <>
-      <div className="contact-bg-color">
-        <Container>
-          <Row className="p-3">
-            <Col md={6}>
-              <h1 className="contact-heading">Contact Us</h1>
-            </Col>
-            <Col md={6}>
-              <div className="d-flex justify-content-end align-items-center h-100">
-                <Link to="/" className="contact-link">
-                  <span className="contact-subheading">Home</span>
-                </Link>
-                <span className="contact-subheading">&nbsp;&gt;&nbsp;</span>
-                <span className="contact-subheading">Contact Us</span>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <div className="content-section1 position-relative d-flex justify-content-center
+       align-items-center">
+        <img
+          src={ContactBanner}
+          alt="Content Banner"
+          className="content-section-image1"
+        />
+
+        <div className="position-absolute">
+          <h1 className="text-white text-center contact-content-heading">Contact</h1>
+        </div>
       </div>
 
       <div className="contact-content-bgcolor">
@@ -71,6 +66,7 @@ export default function Contact() {
                   <Col md={6} className="mt-3">
                     <div className="contact-input-field mb-3">
                       <input
+                        name="fname"
                         type="text"
                         className="contact-input"
                         placeholder="First Name"
@@ -84,6 +80,7 @@ export default function Contact() {
                     <div className="contact-input-field mb-3">
                       <input
                         type="text"
+                        name="lname"
                         className="contact-input"
                         placeholder="Last Name"
                         value={lastName}
@@ -95,6 +92,7 @@ export default function Contact() {
                   <Col md={6} className="mt-3">
                     <div className="contact-input-field mb-3">
                       <input
+                        name="email"
                         type="email"
                         className="contact-input"
                         placeholder="Email"
@@ -107,11 +105,12 @@ export default function Contact() {
                   <Col md={6} className="mt-3">
                     <div className="contact-input-field mb-3">
                       <input
-                        type="password"
+                        name="phone"
+                        type="text"
                         className="contact-input"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Phone"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                       ></input>
                     </div>
                   </Col>
@@ -120,6 +119,7 @@ export default function Contact() {
                     <textarea
                       className="contact-input mt-3"
                       rows="5"
+                      name="message"
                       placeholder="Leave a comment here"
                       value={textarea}
                       onChange={(e) => setTextArea(e.target.value)}
@@ -233,7 +233,6 @@ export default function Contact() {
             style={{ border: 0, width: "100%", height: "calc(100vh - 300px)" }}
             allowFullScreen
           ></iframe>
-         
         </div>
       </div>
     </>

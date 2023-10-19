@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Services.css";
-import { Col, Container, Row } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
@@ -10,6 +9,7 @@ import CardImages2 from "./Service images/SMO.jpg";
 import CardImages3 from "./Service images/DIGITAL-MARKETING.jpg";
 import CardImages4 from "./Service images/ContentStrategy.jpg";
 import CardImages5 from "./Service images/CUSTOMISED-SERVICES.jpg";
+import ServicesBanner from "./contentImg/services-banner-image1.png";
 
 const Services = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -24,26 +24,20 @@ const Services = () => {
 
   return (
     <>
-      <div className='service-bg-color'>
-    <Container>
-      <Row className='p-3'>
-        <Col md={6}>
-          <h1 className='service-heading'>Services</h1>
-        </Col>
-        <Col md={6}>
-          <div className='d-flex justify-content-end align-items-center h-100'>
-            <Link to="/" className="service-link"><span className='service-subheading'>Home</span></Link>
-            <span className='service-subheading'>&nbsp;&gt;&nbsp;</span>
-            <span className='service-subheading'>Services</span>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+      <div className="content-section1 position-relative d-flex justify-content-center
+       align-items-center">
+        <img
+          src={ServicesBanner}
+          alt="Content Banner"
+          className="content-section-image1"
+        />
 
-    </div>
-      <div className="some-cards2 ">
-    
+        <div className="position-absolute">
+          <h1 className="text-white text-center services-content-heading">Services</h1>
+        </div>
+      </div>
 
+      <div className="some-cards2 mt-2">
         <CardGroup className="our-cardgroup1">
           <Card
             onMouseEnter={handleMouseEnter}
@@ -52,6 +46,7 @@ const Services = () => {
           >
             <Card.Img className="some-img2" variant="top" src={CardImages} />
 
+            <Link to="/contentspeak">
             <Card.Body>
               <div className="service-overlay1">
                 <div className="service1">
@@ -62,13 +57,16 @@ const Services = () => {
                 </div>
               </div>
             </Card.Body>
+            </Link>
           </Card>
+
           <Card
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className="custom-card2"
           >
             <Card.Img className="some-img2" variant="top" src={CardImages1} />
+            <Link to="/designpop">
             <Card.Body>
               <div className="service-overlay1">
                 <div className="service1">
@@ -80,13 +78,16 @@ const Services = () => {
                 </div>
               </div>
             </Card.Body>
+            </Link>
           </Card>
+
           <Card
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className="custom-card2"
           >
             <Card.Img className="some-img2" variant="top" src={CardImages2} />
+            <Link to="/markettwist">
             <Card.Body>
               <div className="service-overlay1">
                 <div className="service1">
@@ -100,8 +101,11 @@ const Services = () => {
                 </div>
               </div>
             </Card.Body>
+            </Link>
           </Card>
+
         </CardGroup>
+
         <CardGroup className="our-cardgroup2">
           <Card
             onMouseEnter={handleMouseEnter}
@@ -122,6 +126,7 @@ const Services = () => {
               </div>
             </Card.Body>
           </Card>
+
           <Card
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -140,12 +145,14 @@ const Services = () => {
               </div>
             </Card.Body>
           </Card>
+
           <Card
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className="custom-card2"
           >
             <Card.Img className="some-img2" variant="top" src={CardImages5} />
+            <Link to="/exclusive">
             <Card.Body>
               <div className="service-overlay1">
                 <div className="service1">
@@ -157,7 +164,9 @@ const Services = () => {
                 </div>
               </div>
             </Card.Body>
+            </Link>
           </Card>
+
         </CardGroup>
       </div>
     </>
