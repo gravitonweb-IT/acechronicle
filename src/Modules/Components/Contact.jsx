@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Contact.css";
@@ -16,6 +16,7 @@ import {
   faLinkedin,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -23,15 +24,25 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [textarea, setTextArea] = useState("");
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log({
-      firstName,
-      lastName,
-      email,
-      phone,
-      textarea,
-    });
+    emailjs
+      .sendForm(
+        "service_qy0u69v",
+        "template_sv6m4gg",
+        form.current,
+        "GaqTCwNAqzegP7dCa"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     // Reset form fields
     setFirstName("");
@@ -43,8 +54,10 @@ export default function Contact() {
 
   return (
     <>
-      <div className="content-section1 position-relative d-flex justify-content-center
-       align-items-center">
+      <div
+        className="content-section1 position-relative d-flex justify-content-center
+       align-items-center"
+      >
         <img
           src={ContactBanner}
           alt="Content Banner"
@@ -52,7 +65,9 @@ export default function Contact() {
         />
 
         <div className="position-absolute">
-          <h1 className="text-white text-center contact-content-heading">Contact</h1>
+          <h1 className="text-white text-center contact-content-heading">
+            Contact
+          </h1>
         </div>
       </div>
 
@@ -61,7 +76,7 @@ export default function Contact() {
           <Row className="pt-5 pb-5 contact-container-box">
             <Col md={6}>
               <h2 className="main-contact-heading">Let's Talk</h2>
-              <Form onSubmit={handleSubmit}>
+              <Form ref={form} onSubmit={sendEmail}>
                 <Row>
                   <Col md={6} className="mt-3">
                     <div className="contact-input-field mb-3">

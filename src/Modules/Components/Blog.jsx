@@ -417,7 +417,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="container mt-5">
+      <div className="second-blog-section pt-5">
+      <div className="container">
         <div className="row">
           <div className="col">
             <ul className="blog-section-menu p-0">
@@ -798,6 +799,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
