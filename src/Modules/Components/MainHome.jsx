@@ -16,13 +16,9 @@ import SliderIcon2 from "./Images/slider-icon2.jpg";
 import SliderIcon3 from "./Images/slider-icon3.jpg";
 import SliderIcon4 from "./Images/slider-icon4.jpg";
 import SliderIcon5 from "./Images/slider-icon5.jpg";
-import KnowledgeImg from "./Images/Knowledge-Hub-05.png";
 import OfferImg from "./MainHomeImgs/offer-image.png";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import image1 from "./Images/Slider1.jpg";
-import image2 from "./Images/slider2.jpg";
-import image3 from "./Images/Slider3.jpg";
 import image4 from "./MainHomeImgs/Content-That-Speaks-for-Itself1.jpg";
 import image5 from "./MainHomeImgs/Design-That-Pops-Out.jpg";
 import image6 from "./MainHomeImgs/Marketing-With-A-Twist1.jpg";
@@ -36,10 +32,11 @@ import Slide4 from "./MainHomeImgs/testimonials-image4.png";
 import Slide5 from "./MainHomeImgs/testimonials-image5.png";
 import Avatar1 from "./Images/avatar1.jpg";
 import Avatar2 from "./Images/avatar2.jpg";
-import SliderImg1 from "./Images/Slider-img1.png";
-import SliderImg2 from "./Images/Slider-img2.png";
+import SliderImg1 from "./Images/slide-image5.png";
+import SliderImg2 from "./Images/slide-image4.png";
 import SliderImg3 from "./Images/Slider-img3.png";
-import Knowledge2 from "./MainHomeImgs/facialmassage2.png";
+import KnowledgeImg2 from "./MainHomeImgs/knowledge-center2.png";
+import WhatOffer from "./MainHomeImgs/what-we-offer.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css";
 import {
@@ -165,9 +162,6 @@ export default function MainHome() {
                   and digital managers, we are here to help you explore the
                   digital.
                 </p>
-                <Button className="mt-4" variant="outline-light">
-                  <b>LEARN MORE</b>
-                </Button>{" "}
               </Carousel.Caption>
             </div>
           </div>
@@ -190,9 +184,6 @@ export default function MainHome() {
                   digital power. With Ace Chronicle, we are here to amaze you at
                   every single stage of your success story.
                 </p>
-                <Button className="mt-4" variant="outline-light">
-                  <b>LEARN MORE</b>
-                </Button>{" "}
               </Carousel.Caption>
             </div>
           </div>
@@ -215,9 +206,6 @@ export default function MainHome() {
                   personalized strategies to drive your business reach and
                   success.
                 </p>
-                <Button className="mt-4" variant="outline-light">
-                  <b>LEARN MORE</b>
-                </Button>{" "}
               </Carousel.Caption>
             </div>
           </div>
@@ -320,7 +308,7 @@ export default function MainHome() {
                   <Card.Img src={image4} alt="" className="" />
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/90 group-hover:via-black/90 group-hover:to-black/90"></div>
 
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
                   <Card.Title className=" home-section-title  font-bold text-white">
@@ -347,7 +335,7 @@ export default function MainHome() {
                   <Card.Img src={image5} alt="" className="" />
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/90 group-hover:via-black/90 group-hover:to-black/90"></div>
 
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
                   <Card.Title className=" home-section-title mt-5  font-bold text-white">
@@ -375,7 +363,7 @@ export default function MainHome() {
                   <Card.Img src={image6} alt="" className="" />
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/90 group-hover:via-black/90 group-hover:to-black/90"></div>
 
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
                   <Card.Title className=" home-section-title  font-bold text-white">
@@ -403,7 +391,7 @@ export default function MainHome() {
                   <Card.Img src={image7} alt="" className="" />
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/90 group-hover:via-black/90 group-hover:to-black/90"></div>
 
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
                   <Card.Title
@@ -434,7 +422,7 @@ export default function MainHome() {
                   <Card.Img src={image8} alt="" className="" />
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/90 group-hover:via-black/90 group-hover:to-black/90"></div>
 
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
                   <Card.Title className=" home-section-title  font-bold text-white mb-5">
@@ -457,7 +445,7 @@ export default function MainHome() {
                   <Card.Img src={image9} alt="" className="" />
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/90 group-hover:via-black/90 group-hover:to-black/90"></div>
 
                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-2 text-center transition-all duration-500 group-hover:translate-y-0">
                   <Card.Title className=" home-section-title  font-bold text-white">
@@ -555,14 +543,14 @@ export default function MainHome() {
                 <div className="avatar-image1 text-center">
                   <img src={Avatar2}></img>
                 </div>
-                <h2 className="avatar-profile-title1">Jassmine</h2>
+                <h2 className="avatar-profile-title1"> Rudra</h2>
                 <p className="avatar-profile-designation1">Content Strategy</p>
               </div>
               <Card.Body>
                 <div className="Department-overlay1">
                   <div className="department1">
                     <Card.Title>
-                      {isHovered ? "Jassmine" : ""}
+                      {isHovered ? "Rudra" : ""}
                       <p className="department-para">Content Strategy</p>
                       <div class="depart-link ">
                         <Link>
@@ -599,7 +587,7 @@ export default function MainHome() {
                 <div className="avatar-image1 text-center">
                   <img src={Avatar1}></img>
                 </div>
-                <h2 className="avatar-profile-title1">Rudra Rathore</h2>
+                <h2 className="avatar-profile-title1">Jassmine</h2>
                 <p className="avatar-profile-designation1">
                   Content Writing/Editing
                 </p>
@@ -608,7 +596,7 @@ export default function MainHome() {
                 <div className="Department-overlay1">
                   <div className="department1">
                     <Card.Title>
-                      {isHovered ? "Rudra Rathore" : ""}
+                      {isHovered ? "Jassmine" : ""}
                       <p className="department-para">Content Writing/Editing</p>
                       <div class="depart-link ">
                         <Link>
@@ -794,6 +782,7 @@ export default function MainHome() {
         <Container fluid>
           <Row className="mainhome-animated-cards">
             <Col md={4} className="mb-3">
+              <Link to="/about" style={{ textDecoration: 'none' }}>
               <div className="home-animated-card-content">
                 <FontAwesomeIcon
                   icon={faUser}
@@ -806,6 +795,7 @@ export default function MainHome() {
                   at its best.
                 </p>
               </div>
+              </Link>
             </Col>
 
             <Col md={4} className="mb-3">
@@ -858,6 +848,7 @@ export default function MainHome() {
             </Col>
 
             <Col md={4} className="mb-3">
+              <Link to="/contact" style={{ textDecoration: 'none' }}>
               <div className="home-animated-card-content">
                 <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
                 <h2 className="home-animated-card-heading mt-3">
@@ -868,6 +859,7 @@ export default function MainHome() {
                   digital reach to reality. With our innovation and creativity.
                 </p>
               </div>
+              </Link>
             </Col>
           </Row>
         </Container>
@@ -916,7 +908,7 @@ export default function MainHome() {
               </h5>
               <div className="skill-bar1">
                 <div className="info">
-                  <span>Content Writing & Editing Services</span>
+                  <span>Content Writing & Editing</span>
                 </div>
 
                 <div className="progress-line1 html">
@@ -926,7 +918,7 @@ export default function MainHome() {
 
               <div className="skill-bar1">
                 <div className="info">
-                  <span>Exclusively Customised Services</span>
+                  <span>Exclusively Customised</span>
                 </div>
 
                 <div className="progress-line1 css">
@@ -936,7 +928,7 @@ export default function MainHome() {
 
               <div className="skill-bar1">
                 <div className="info">
-                  <span>Design Services</span>
+                  <span>Designing</span>
                 </div>
 
                 <div className="progress-line1 bootstrap">
@@ -946,7 +938,7 @@ export default function MainHome() {
 
               <div className="skill-bar1">
                 <div className="info">
-                  <span>Social Media Management Services</span>
+                  <span>Social Media Management</span>
                 </div>
 
                 <div className="progress-line1 javascript">
@@ -956,7 +948,7 @@ export default function MainHome() {
 
               <div className="skill-bar1">
                 <div className="info">
-                  <span>Digital Marketing Services</span>
+                  <span>Digital Marketing</span>
                 </div>
 
                 <div className="progress-line1 reactjs">
@@ -976,7 +968,7 @@ export default function MainHome() {
             </Col>
             <Col lg={6} className="fixed-offer-image">
               <div className="offer-image">
-                <img src={OfferImg}></img>
+                <img src={WhatOffer}></img>
               </div>
             </Col>
           </Row>
@@ -985,10 +977,10 @@ export default function MainHome() {
 
       {/*knowledge-start*/}
       <Container>
-        <Row className="mt-3">
+        <Row className="">
           <Col md={6}>
             <div className="knowledge-image d-flex justify-content-center">
-              <img src={Knowledge2}></img>
+              <img src={KnowledgeImg2}></img>
             </div>
           </Col>
           <Col md={6} className="mb-4 d-flex align-items-center">
@@ -1204,10 +1196,11 @@ export default function MainHome() {
         <Container>
           <div className="home-knowledge-container">
             <Row>
-              <h2 className="knowledge-center-heading mt-5">
+              <h2 className="knowledge-center-heading">
                 Knowledge Center
               </h2>
               <Col md={4} className="mt-5">
+                <Link to="/blog" style={{ textDecoration: 'none' }}>
                 <div className="knowledge-center-images">
                   <img src={Blog1}></img>
                 </div>
@@ -1221,8 +1214,10 @@ export default function MainHome() {
                     sed diam nonummy nibh euismod ti...
                   </p>
                 </div>
+                </Link>
               </Col>
               <Col md={4} className="mt-5">
+                <Link to="/blog" style={{ textDecoration: 'none' }}>
                 <div className="knowledge-center-images">
                   <img src={Blog2}></img>
                 </div>
@@ -1236,8 +1231,10 @@ export default function MainHome() {
                     sed diam nonummy nibh euismod ti...
                   </p>
                 </div>
+                </Link>
               </Col>
               <Col md={4} className="mt-5">
+                <Link to="/blog" style={{ textDecoration: 'none' }}>
                 <div className="knowledge-center-images">
                   <img src={Blog3}></img>
                 </div>
@@ -1253,9 +1250,10 @@ export default function MainHome() {
                     sed diam nonummy nibh euismod ti...
                   </p>
                 </div>
+                </Link>
               </Col>
             </Row>
-            <Row>
+            {/* <Row>
               <Col md={4} className="mt-5">
                 <div className="knowledge-center-images">
                   <img src={Blog4}></img>
@@ -1303,7 +1301,7 @@ export default function MainHome() {
                   </p>
                 </div>
               </Col>
-            </Row>
+            </Row> */}
           </div>
         </Container>
       </div>

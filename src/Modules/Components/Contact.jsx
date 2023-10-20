@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Contact.css";
-import ContactBanner from "./contentImg/contact-banner-image1.png";
+import ContactBanner from "./contentImg/Contact-banner-images1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,

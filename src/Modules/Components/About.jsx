@@ -14,13 +14,12 @@ import slicksection1 from "./AboutImg/slicksection1.jpg";
 import slicksection2 from "./AboutImg/slicksection2.jpg";
 import slicksection3 from "./AboutImg/slicksection3.jpg";
 import slicksection4 from "./AboutImg/slicksection4.jpg";
-import aboutushero from "./AboutImg/aboutusheroimage.jpg";
-import aboutclients1 from "./AboutImg/aboutclients1.png";
-import aboutclients2 from "./AboutImg/aboutclients2.png";
-import aboutclients3 from "./AboutImg/aboutclients3.png";
-import aboutclients4 from "./AboutImg/aboutclients4.png";
-import aboutclients5 from "./AboutImg/aboutclients5.png";
-import aboutclients6 from "./AboutImg/aboutclients6.png";
+import slicksection5 from "./AboutImg/slicksection5.png";
+import SliderIcon1 from "./Images/slider-icon1.jpg";
+import SliderIcon2 from "./Images/slider-icon2.jpg";
+import SliderIcon3 from "./Images/slider-icon3.jpg";
+import SliderIcon4 from "./Images/slider-icon4.jpg";
+import SliderIcon5 from "./Images/slider-icon5.jpg";
 
 import "./About.css";
 
@@ -52,9 +51,19 @@ const About = () => {
       },
     ],
   };
+  const settings1 = {
+    fade: false,
+    infinite: true,
+    dots: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
   return (
     <>
-      {/* <div className='about-bg-color'>
+    {/* <div className='about-bg-color'>
     <Container>
       <Row className='p-3'>
         <Col md={6}>
@@ -95,7 +104,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-    </div> */}
+    </div>  */}
 
       {/* banner-part */}
       <div
@@ -295,7 +304,7 @@ const About = () => {
       {/* circle-cards */}
     
       <div className="container text-center mt-5">
-        <h1>Awesome Shortcodes</h1>
+        <h1 className="text-[#3b6d6e]">Awesome Shortcodes</h1>
         <div className="row justify-content-center mt-5">
           <div className="col-sm-12 col-md-3">
             <div className="circle">
@@ -351,7 +360,7 @@ const About = () => {
       </div>
 
       {/* section4 */}
-      <div className="about-background-color1">
+      {/* <div className="about-background-color1">
         <Container>
           <Row>
             <Col xs={12} sm={6} className="mb-3">
@@ -383,67 +392,26 @@ const About = () => {
                       Is This Theme Optimized?
                     </div>
                   </Col>
-                  {/* <Col xs={12} sm={6}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                  aliquip ex ea commodo consequat.
-                </p>
-              </Col> */}
                 </Row>
               </div>
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
 
       {/* section5 */}
-      <div className="aboutclientsection">
+      <div className="client-slider">
         <Container>
-          <Row>
-            <Col xs={6} sm={4} md={2} className="mb-2">
-              <img
-                src={aboutclients1}
-                alt="Image 1"
-                className="aboutclientsection1 image-transition"
-              />
-            </Col>
-            <Col xs={6} sm={4} md={2} className="mb-2">
-              <img
-                src={aboutclients2}
-                alt="Image 2"
-                className="aboutclientsection2 image-transition"
-              />
-            </Col>
-            <Col xs={6} sm={4} md={2} className="mb-2">
-              <img
-                src={aboutclients3}
-                alt="Image 3"
-                className="aboutclientsection3 image-transition"
-              />
-            </Col>
-            <Col xs={6} sm={4} md={2} className="mb-2">
-              <img
-                src={aboutclients4}
-                alt="Image 4"
-                className="aboutclientsection4 image-transition"
-              />
-            </Col>
-            <Col xs={6} sm={4} md={2} className="mb-2">
-              <img
-                src={aboutclients5}
-                alt="Image 5"
-                className="aboutclientsection5 image-transition"
-              />
-            </Col>
-            <Col xs={6} sm={4} md={2} className="mb-2">
-              <img
-                src={aboutclients6}
-                alt="Image 6"
-                className="aboutclientsection6 image-transition"
-              />
+          <Row className="mt-5 mb-5">
+            <h2 className="client-slider-heading">Our Client & Partners</h2>
+            <Col md={12} sm={12} className="mt-5">
+              <Slider {...settings1}>
+                <img src={SliderIcon1}></img>
+                <img src={SliderIcon2}></img>
+                <img src={SliderIcon3}></img>
+                <img src={SliderIcon4}></img>
+                <img src={SliderIcon5}></img>
+              </Slider>
             </Col>
           </Row>
         </Container>

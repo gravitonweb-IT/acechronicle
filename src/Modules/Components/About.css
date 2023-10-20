@@ -178,6 +178,7 @@
 .inner-circle:hover {
   border: 8px solid #00d3f3;
   color: #00d3f3;
+  cursor: pointer;
 }
 
 /* section-3 */
@@ -195,22 +196,4 @@
   color: #3b6d6e;
 }
 
-.aboutclientsection {
-  padding: 50px !important;
-  background-color: #f6f7fb !important;
-}
 
-.aboutclientsection .aboutclientsection1,
-.aboutclientsection2,
-.aboutclientsection3,
-.aboutclientsection4,
-.aboutclientsection5,
-.aboutclientsection6 {
-  width: 200px;
-  float: left;
-  text-align: inherit;
-  margin-bottom: 0;
-  height: auto;
-  display: table;
-  table-layout: fixed;
-}

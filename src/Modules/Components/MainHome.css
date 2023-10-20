@@ -290,7 +290,17 @@
     padding: 0px;
   }
 }
-.fixed-offer-image {
+
+/* .fixed-offer-image{
+  width:100%;
+  height: auto;
+}
+
+.fixed-offer-image .offer-image{
+  width: 500px;
+  height: auto;
+} */
+/* .fixed-offer-image {
   position: relative;
 }
 
@@ -305,7 +315,7 @@
   .offer-image {
     position: static;
   }
-}
+} */
 
 .mainhome-offer-heading {
   color: #3b6d6e;
@@ -398,18 +408,19 @@
   height: auto;
 }
 .knowledge-image img {
-  width: 300px;
+  width:300px;
   height: auto;
-  transform: translateX(-60px);
+  margin: 30px 0 !important ;
+  /* transform: translateX(-60px); */
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .knowledge-image img {
     width: 150px;
     height: auto;
     transform: translateX(0px);
   }
-}
+} */
 .home-knowledge-heading {
   color: #3b6d6e;
   font-size: 30px;
@@ -498,11 +509,11 @@
   color: #848892;
 }
 .home-knowledge-container {
-  padding: 0 100px;
+  padding: 30px 100px;
 }
 @media screen and (max-width: 992px) {
   .home-knowledge-container {
-    padding: 0px;
+    padding:20px  0px;
   }
 }
 /* newsletter */

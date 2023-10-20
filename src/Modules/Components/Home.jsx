@@ -29,10 +29,9 @@ import SliderIcon2 from "./Images/slider-icon2.jpg";
 import SliderIcon3 from "./Images/slider-icon3.jpg";
 import SliderIcon4 from "./Images/slider-icon4.jpg";
 import SliderIcon5 from "./Images/slider-icon5.jpg";
-import SliderImg1 from "./Images/Slider-img1.png";
-import SliderImg2 from "./Images/Slider-img2.png";
+import SliderImg1 from "./Images/slide-image5.png";
+import SliderImg2 from "./Images/slide-image4.png";
 import SliderImg3 from "./Images/Slider-img3.png";
-
 const Home = () => {
   const [projects, setProjects] = useState(0);
   const [startups, setStartups] = useState(0);

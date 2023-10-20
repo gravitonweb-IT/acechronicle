@@ -37,7 +37,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="some-cards2 mt-2">
+      <div className="some-cards2">
         <CardGroup className="our-cardgroup1">
           <Card
             onMouseEnter={handleMouseEnter}
