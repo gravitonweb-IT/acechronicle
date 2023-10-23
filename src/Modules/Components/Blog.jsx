@@ -597,8 +597,8 @@ const Blog = () => {
                 </div>
               </div>
 
-              <div className="row mt-5 mb-5">
-                <div className="col-md-3">
+              <div className="row mt-3">
+                <div className="col-md-3 mb-3">
                   <div className="blog-shade-image">
                     <FontAwesomeIcon
                       icon={faQuoteRight}
@@ -610,7 +610,7 @@ const Blog = () => {
                   </div>
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-3 mb-3">
                   <div className="blog-shade-image">
                     <h5 className="mt-3">
                       Create An Exceptional Blog For Exceptional Writing
@@ -623,7 +623,7 @@ const Blog = () => {
                   </div>
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-3 mb-3">
                   <div className="blog-shade-image">
                     <FontAwesomeIcon
                       icon={faQuoteRight}
@@ -652,7 +652,7 @@ const Blog = () => {
 
             <div className={toggle === 2 ? "show-content" : "content"}>
               <div className="row mt-5 mb-5">
-                <div className="col-md-3">
+                <div className="col-md-3 mb-3">
                   <div className="blog-shade-image">
                     <FontAwesomeIcon
                       icon={faQuoteRight}
@@ -697,7 +697,7 @@ const Blog = () => {
                   </div>
                 </div>
 
-                <div className="col-md-3 mb-3">
+                <div className="col-md-3">
                   <div className="">
                     <img src={Blog2}></img>
                     <div class=" blog-section-card p-3">
@@ -717,7 +717,7 @@ const Blog = () => {
 
             <div className={toggle === 4 ? "show-content" : "content"}>
               <div className="row mt-5 mb-5">
-                <div className="col-md-3">
+                <div className="col-md-3 mb-3">
                   <div className="blog-shade-image">
                     <FontAwesomeIcon
                       icon={faQuoteRight}
@@ -729,7 +729,7 @@ const Blog = () => {
                   </div>
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-3 mb-3">
                   <div className="blog-shade-image">
                     <FontAwesomeIcon
                       icon={faQuoteRight}
@@ -778,7 +778,7 @@ const Blog = () => {
 
             <div className={toggle === 6 ? "show-content" : "content"}>
               <div className="row mt-5 mb-5">
-                <div className="col-md-3 mb-3">
+                <div className="col-md-3">
                   <div className="">
                     <img src={Blog3}></img>
                     <div class=" blog-section-card p-3">

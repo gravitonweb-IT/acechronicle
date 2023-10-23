@@ -110,7 +110,6 @@
   padding: 30px;
   transition: color 0.2s;
 }
-
 .aboutus-text {
   text-align: center;
   justify-content: center;
@@ -119,7 +118,7 @@
 }
 
 .aboutus-card-title {
-  color: #fff;
+   color: #fff;
 }
 
 .aboutus-hover-cards .aboutus-text {

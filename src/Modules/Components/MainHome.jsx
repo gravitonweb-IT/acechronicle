@@ -3,7 +3,7 @@ import "./MainHome.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Col, Container, Row, Button } from "react-bootstrap";
+import { Col, Container, Row, Button, TabContainer } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Blog1 from "./MainHomeImgs/blog1.jpg";
 import Blog2 from "./MainHomeImgs/blog2.jpg";
@@ -38,6 +38,8 @@ import SliderImg3 from "./Images/Slider-img3.png";
 import KnowledgeImg2 from "./MainHomeImgs/knowledge-center2.png";
 import WhatOffer from "./MainHomeImgs/what-we-offer.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Newsletter1 from "./MainHomeImgs/newsletter-image1.png";
+import Newsletter2 from "./MainHomeImgs/newsletter-image2.png";
 import "animate.css";
 import {
   faUser,
@@ -782,19 +784,19 @@ export default function MainHome() {
         <Container fluid>
           <Row className="mainhome-animated-cards">
             <Col md={4} className="mb-3">
-              <Link to="/about" style={{ textDecoration: 'none' }}>
-              <div className="home-animated-card-content">
-                <FontAwesomeIcon
-                  icon={faUser}
-                  className="fa-2x home-animated-card-icons"
-                />
-                <h2 className="home-animated-card-heading mt-3">About Us</h2>
-                <p className="mt-3 home-animated-card-paragraph">
-                  Explore the competitive leverage of the immense digital
-                  universe with experts at Ace Chronicle and experience success
-                  at its best.
-                </p>
-              </div>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <div className="home-animated-card-content">
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    className="fa-2x home-animated-card-icons"
+                  />
+                  <h2 className="home-animated-card-heading mt-3">About Us</h2>
+                  <p className="mt-3 home-animated-card-paragraph">
+                    Explore the competitive leverage of the immense digital
+                    universe with experts at Ace Chronicle and experience
+                    success at its best.
+                  </p>
+                </div>
               </Link>
             </Col>
 
@@ -848,17 +850,18 @@ export default function MainHome() {
             </Col>
 
             <Col md={4} className="mb-3">
-              <Link to="/contact" style={{ textDecoration: 'none' }}>
-              <div className="home-animated-card-content">
-                <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
-                <h2 className="home-animated-card-heading mt-3">
-                  Connect with us Today
-                </h2>
-                <p>
-                  &nbsp;It's time for us to work together to bring your dream of
-                  digital reach to reality. With our innovation and creativity.
-                </p>
-              </div>
+              <Link to="/contact" style={{ textDecoration: "none" }}>
+                <div className="home-animated-card-content">
+                  <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
+                  <h2 className="home-animated-card-heading mt-3">
+                    Connect with us Today
+                  </h2>
+                  <p>
+                    &nbsp;It's time for us to work together to bring your dream
+                    of digital reach to reality. With our innovation and
+                    creativity.
+                  </p>
+                </div>
               </Link>
             </Col>
           </Row>
@@ -1133,7 +1136,7 @@ export default function MainHome() {
 
       {/* newsletter-start */}
 
-      <div
+      {/* <div
         className="home-banner-section d-none d-lg-block"
         id="newsletter-banner-parallax"
       >
@@ -1171,6 +1174,42 @@ export default function MainHome() {
             </form>
           </div>
         </div>
+      </div> */}
+
+      <div className="newsletter-bg-color">
+        <Container className="pt-5">
+          <Row>
+            <Col md={6} className="mb-3">
+              <img src={Newsletter1}></img>
+            </Col>
+            <Col md={6} className="d-flex justify-content-center">
+              <div>
+                <h1 className="newsletter-section-heading">
+                  SUBSCRIBE TO OUR
+                  <br /> NEWSLETTER
+                </h1>
+                <p className="newsletter-section-para text-justify">
+                  Discover our latest products and exclusive offers, designed <br></br> to
+                  enhance your lifestyle and make every day a little more <br></br>
+                  extraordinary.
+                </p>
+                <form>
+                  <div className="">
+                    <input
+                      type="email"
+                      className="newsletter-section-input"
+                      placeholder="Email*"
+                    />
+                  </div>
+
+                  <button type="submit" className="btn btn-outline-light mt-3">
+                    Signup to Newsletter
+                  </button>
+                </form>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
       {/*slider2-start*/}
@@ -1196,60 +1235,58 @@ export default function MainHome() {
         <Container>
           <div className="home-knowledge-container">
             <Row>
-              <h2 className="knowledge-center-heading">
-                Knowledge Center
-              </h2>
+              <h2 className="knowledge-center-heading">Knowledge Center</h2>
               <Col md={4} className="mt-5">
-                <Link to="/blog" style={{ textDecoration: 'none' }}>
-                <div className="knowledge-center-images">
-                  <img src={Blog1}></img>
-                </div>
-                <div>
-                  <h6 className="knowledge-center-short-heading">Treding</h6>
-                  <h2 className="knowledge-center-main-heading">
-                    10 Tips For Traveling With Friends
-                  </h2>
-                  <p className="knowledge-center-paragraph">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod ti...
-                  </p>
-                </div>
+                <Link to="/blog" style={{ textDecoration: "none" }}>
+                  <div className="knowledge-center-images">
+                    <img src={Blog1}></img>
+                  </div>
+                  <div>
+                    <h6 className="knowledge-center-short-heading">Treding</h6>
+                    <h2 className="knowledge-center-main-heading">
+                      10 Tips For Traveling With Friends
+                    </h2>
+                    <p className="knowledge-center-paragraph">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod ti...
+                    </p>
+                  </div>
                 </Link>
               </Col>
               <Col md={4} className="mt-5">
-                <Link to="/blog" style={{ textDecoration: 'none' }}>
-                <div className="knowledge-center-images">
-                  <img src={Blog2}></img>
-                </div>
-                <div>
-                  <h6 className="knowledge-center-short-heading">Treding</h6>
-                  <h2 className="knowledge-center-main-heading">
-                    15 Signs You're In Love With UX Design
-                  </h2>
-                  <p className="knowledge-center-paragraph">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod ti...
-                  </p>
-                </div>
+                <Link to="/blog" style={{ textDecoration: "none" }}>
+                  <div className="knowledge-center-images">
+                    <img src={Blog2}></img>
+                  </div>
+                  <div>
+                    <h6 className="knowledge-center-short-heading">Treding</h6>
+                    <h2 className="knowledge-center-main-heading">
+                      15 Signs You're In Love With UX Design
+                    </h2>
+                    <p className="knowledge-center-paragraph">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod ti...
+                    </p>
+                  </div>
                 </Link>
               </Col>
               <Col md={4} className="mt-5">
-                <Link to="/blog" style={{ textDecoration: 'none' }}>
-                <div className="knowledge-center-images">
-                  <img src={Blog3}></img>
-                </div>
-                <div>
-                  <h6 className="knowledge-center-short-heading">
-                    Travel,Treding
-                  </h6>
-                  <h2 className="knowledge-center-main-heading">
-                    About Bicycle Touring<br></br> Pro
-                  </h2>
-                  <p className="knowledge-center-paragraph">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod ti...
-                  </p>
-                </div>
+                <Link to="/blog" style={{ textDecoration: "none" }}>
+                  <div className="knowledge-center-images">
+                    <img src={Blog3}></img>
+                  </div>
+                  <div>
+                    <h6 className="knowledge-center-short-heading">
+                      Travel,Treding
+                    </h6>
+                    <h2 className="knowledge-center-main-heading">
+                      About Bicycle Touring<br></br> Pro
+                    </h2>
+                    <p className="knowledge-center-paragraph">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod ti...
+                    </p>
+                  </div>
                 </Link>
               </Col>
             </Row>

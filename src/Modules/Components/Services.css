@@ -69,3 +69,122 @@
     font-size: 30px;
   }
 }
+
+/* new-code */
+.services-second-section{
+  background-color: #24262a !important;
+}
+
+.services-image1-section{
+  background-color: white;
+  padding: 93px;
+}
+
+@media screen and (max-width:1350px) {
+  .services-image1-section{
+    padding:60px;
+  }
+}
+@media screen and (max-width:1200px) {
+  .services-image1-section{
+    padding:40px;
+  }
+}
+@media screen and (max-width:1100px) {
+  .services-image1-section{
+    padding:30px;
+  }
+}
+@media screen and (max-width:900px) {
+  .services-image1-section{
+    padding:20px;
+  }
+}
+@media screen and (max-width:768px) {
+  .services-image1-section{
+    padding:93px;
+  }
+}
+@media screen and (max-width:576px) {
+  .services-image1-section{
+    padding:50px;
+  }
+}
+
+.services-effect-box{
+  position: relative;
+  overflow: hidden;
+}
+
+.services-effect-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.services-effect-box:hover img {
+  transform: scale(1.1);
+}
+.services-effect-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color :rgba(0, 0, 0, 0.4);
+  color:white;
+  cursor:pointer;
+  
+}
+.services-effect-box:hover .services-effect-layer {
+  opacity: 1;
+}
+.secvices-icon1{
+  color: #cad1d9;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.secvices-icon2{
+  color: #cad1d9;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width:1050px) {
+  .secvices-icon2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:1050px) {
+  .secvices-icon1{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .secvices-icon1{
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .secvices-icon2{
+    font-size:5rem;
+  }
+}
+@media screen and (max-width:576px) {
+  .secvices-icon1{
+    font-size:3rem;
+  }
+}
+@media screen and (max-width:576px) {
+  .secvices-icon2{
+    font-size:3rem;
+  }
+}
+
+

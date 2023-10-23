@@ -519,19 +519,23 @@
 /* newsletter */
 .newsletter-section-heading {
   font-family: "Playfair Display";
+  font-weight: bold;
+  color: white;
 }
 
 .newsletter-section-para {
-  width: 500px !important;
+  color: white;
 }
-
-.banner-button-section {
-  border-width: 4px;
-}
-
 .home-banner-section {
   background-image: url("./MainHomeImgs/newsletter-img1.jpg");
   height: 100vh;
   background-position: left;
   background-size: cover;
+}
+.newsletter-bg-color{
+  background-color: #24262a;
+}
+.newsletter-section-input{
+  padding:5px 10px;
+  border-radius:5px;
 }

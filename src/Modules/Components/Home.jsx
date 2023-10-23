@@ -87,7 +87,7 @@ const Home = () => {
   };
   return (
     <>
-        {/* Carousels */}
+      {/* Carousels */}
         <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -162,9 +162,6 @@ const Home = () => {
                   personalized strategies to drive your business reach and
                   success.
                 </p>
-                <Button className="mt-4" variant="outline-light">
-                  <b>LEARN MORE</b>
-                </Button>{" "}
               </Carousel.Caption>
             </div>
           </div>
