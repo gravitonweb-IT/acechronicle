@@ -73,7 +73,7 @@
 }
 @keyframes css-fill {
   100% {
-    width: 78%;
+    width: 93%;
   }
 }
 #javascript-bar {
@@ -82,7 +82,7 @@
 }
 @keyframes js-fill {
   100% {
-    width: 64%;
+    width: 86%;
   }
 }
 #jQuery-bar {
@@ -91,7 +91,7 @@
 }
 @keyframes jQuery-fill {
   100% {
-    width: 86%;
+    width: 91%;
   }
 }
 

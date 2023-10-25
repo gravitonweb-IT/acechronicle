@@ -63,7 +63,7 @@ const About = () => {
   };
   return (
     <>
-    {/* <div className='about-bg-color'>
+      {/* <div className='about-bg-color'>
     <Container>
       <Row className='p-3'>
         <Col md={6}>
@@ -136,11 +136,15 @@ const About = () => {
                 alt="Card Image"
               />
               <div class="aboutcard-content p-3">
-                <h5 class="card-title">Planning & Modelling</h5>
+                <h5 class="card-title">
+                  Tailored Strategies for Content Excellence
+                </h5>
                 <p class="card-text mt-3 text-[#848892]">
                   {" "}
-                  Strategic planning and effective modeling are essential for
-                  achieving goals and optimizing outcomes.
+                  Every brand has a unique story. Our dedicated team at Ace
+                  Chronicle delves deep into understanding your vision, crafting
+                  a bespoke content strategy and modeling plan that sets you up
+                  for success.
                 </p>
               </div>
             </div>
@@ -154,10 +158,11 @@ const About = () => {
                 alt="Card Image"
               />
               <div class="aboutcard-content p-3">
-                <h5 class="card-title">Fast Support</h5>
+                <h5 class="card-title">Always There, Always Ready</h5>
                 <p class="card-text mt-3 text-[#848892]">
-                  Fast support ensures prompt problem resolution and customer
-                  satisfaction, enhancing the overall experience.
+                  In the dynamic world of content, responsiveness is key. Our
+                  team ensures that your queries are addressed swiftly, ensuring
+                  seamless project progression and satisfaction.
                 </p>
               </div>
             </div>
@@ -167,10 +172,11 @@ const About = () => {
             <div class="card">
               <img src={aboutussection3} alt="Card Image" />
               <div class="aboutcard-content p-3">
-                <h5 class="card-title">Team Work</h5>
+                <h5 class="card-title">Collaborative Brilliance</h5>
                 <p class="card-text mt-3 text-[#848892]">
-                  Teamwork fosters collaboration, synergy, and shared success by
-                  combining diverse skills and perspectives toward common goals.
+                  At Ace Chronicle, we believe in the power of collaboration.
+                  Merging diverse talents and insights, our team works
+                  cohesively to create content that stands out and resonates.
                 </p>
               </div>
             </div>
@@ -184,15 +190,11 @@ const About = () => {
           <div className="row">
             <div class="col-md-6">
               <h1>All You Need In One Theme</h1>
-              <p className="text-[#848892] mb-2 justify-text">
-                An all-in-one theme simplifies website design by offering a
-                comprehensive suite of tools and features, streamlining the
-                process and enhancing creativity.
-              </p>
-              <p className="text-[#848892] justify-text">
-                It provides a versatile platform suitable for a diverse range of
-                projects, from blogs and e-commerce sites to portfolios, making
-                it the ideal choice for various web development needs.
+              <p className="text-[#848892] text-justify">
+                From content ideation and strategy formulation to development
+                and optimization,<br></br> we offer an all-encompassing suite of
+                services. Whether launching a new <br></br> brand or reinventing an
+                existing one, Ace Chronicle is your go-to content<br></br> partner.
               </p>
             </div>
 
@@ -200,7 +202,7 @@ const About = () => {
               <div className="wrapper">
                 <div className="skills">
                   <div className="details">
-                    <span>Photoshop</span>
+                    <span>Strategy Development: Laying down the roadmap for content success.</span>
                     <span>100%</span>
                   </div>
                   <div class="bar">
@@ -209,8 +211,8 @@ const About = () => {
                 </div>
                 <div className="skills">
                   <div className="details">
-                    <span>Illustrator</span>
-                    <span>78%</span>
+                    <span>Content Creation: Tailored narratives that resonate with your audience.</span>
+                    <span>93%</span>
                   </div>
                   <div class="bar">
                     <div id="css-bar"></div>
@@ -218,8 +220,8 @@ const About = () => {
                 </div>
                 <div className="skills">
                   <div className="details">
-                    <span>In Design</span>
-                    <span>64%</span>
+                    <span>Market Research & Insights: Understanding trends to ensure content relevancy.</span>
+                    <span>86%</span>
                   </div>
                   <div class="bar">
                     <div id="javascript-bar"></div>
@@ -227,8 +229,8 @@ const About = () => {
                 </div>
                 <div className="skills">
                   <div className="details">
-                    <span>Fireworks</span>
-                    <span>86%</span>
+                    <span>Content Optimization: Fine-tuning content for maximum performance.</span>
+                    <span>91%</span>
                   </div>
                   <div class="bar">
                     <div id="jQuery-bar"></div>
@@ -247,11 +249,9 @@ const About = () => {
             <div className="aboutus-hover-cards">
               <div className="aboutus-cards-body d-flex flex-column align-items-center justify-content-center">
                 <i className="bi bi-person-fill icon"></i>
-
-                <h5 className="aboutus-card-title ">Easy to Use</h5>
-
+                <h5 className="aboutus-card-title ">User-Focused Approach</h5>
                 <p className="card-text aboutus-text text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 User-focused approach ensures products meet needs and delights customers effectively.
                 </p>
               </div>
             </div>
@@ -262,10 +262,10 @@ const About = () => {
               <div className="aboutus-cards-body d-flex flex-column align-items-center justify-content-center">
                 <i className="bi bi-cloud-download icon"></i>
 
-                <h5 className="aboutus-card-title">Free Updates</h5>
+                <h5 className="aboutus-card-title">Constant Evolution</h5>
 
                 <p className="card-text aboutus-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Constant evolution drives progress, adaptability, and innovation in every aspect.
                 </p>
               </div>
             </div>
@@ -276,10 +276,10 @@ const About = () => {
               <div className="aboutus-cards-body d-flex flex-column align-items-center justify-content-center">
                 <i className="bi bi-chat-dots icon"></i>
 
-                <h5 className="aboutus-card-title">Great Support</h5>
+                <h5 className="aboutus-card-title">Quick Support</h5>
 
                 <p className="card-text aboutus-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quick support ensures customer satisfaction and resolves issues promptly and effectively.
                 </p>
               </div>
             </div>
@@ -290,10 +290,10 @@ const About = () => {
               <div className="aboutus-cards-body d-flex flex-column align-items-center justify-content-center">
                 <i className="bi bi-book icon"></i>
 
-                <h5 className="aboutus-card-title">Documentation</h5>
+                <h5 className="aboutus-card-title">Knowledge Sharing</h5>
 
                 <p className="card-text aboutus-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Knowledge sharing fosters collaboration, empowers growth, and cultivates a culture of continuous learning.
                 </p>
               </div>
             </div>
@@ -302,7 +302,7 @@ const About = () => {
       </div>
 
       {/* circle-cards */}
-    
+
       <div className="container text-center mt-5">
         <h1 className="text-[#3b6d6e]">Awesome Shortcodes</h1>
         <div className="row justify-content-center mt-5">
@@ -316,7 +316,7 @@ const About = () => {
           <div className="col-sm-12 col-md-3">
             <div className="circle">
               <div className="inner-circle">2</div>
-              Design
+              Narrative Blueprint
             </div>
           </div>
 
@@ -330,7 +330,7 @@ const About = () => {
           <div className="col-sm-12 col-md-3">
             <div className="circle">
               <div className="inner-circle">4</div>
-              Test
+              Evaluate
             </div>
           </div>
         </div>
