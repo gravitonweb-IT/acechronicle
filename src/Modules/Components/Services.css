@@ -1,3 +1,13 @@
+
+.servicebanner-vdeo{
+width: 100%;
+object-fit: cover;
+height: 650px;
+}
+
+
+
+
 .some-cards2 {
   background-color: #24262a !important;
   margin-bottom: -2rem;

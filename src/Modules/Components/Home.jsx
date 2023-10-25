@@ -29,9 +29,10 @@ import SliderIcon2 from "./Images/slider-icon2.jpg";
 import SliderIcon3 from "./Images/slider-icon3.jpg";
 import SliderIcon4 from "./Images/slider-icon4.jpg";
 import SliderIcon5 from "./Images/slider-icon5.jpg";
-import SliderImg1 from "./Images/slide-image5.png";
-import SliderImg2 from "./Images/slide-image4.png";
-import SliderImg3 from "./Images/Slider-img3.png";
+// import SliderImg1 from "./Images/slide-image5.png";
+// import SliderImg2 from "./Images/slide-image4.png";
+// import SliderImg3 from "./Images/Slider-img3.png";
+import mainhomevideo from "./MainHomeImgs/mainhomevideo.mp4";
 const Home = () => {
   const [projects, setProjects] = useState(0);
   const [startups, setStartups] = useState(0);
@@ -85,10 +86,37 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+
+  const contentList = [
+    "Experience The Digital Power",
+    "Explore The Innovation and Creativity",
+    "Excel The Competitive Edge",
+  ];
+  const [contentIndex, setContentIndex] = useState(0);
+
+
+  useEffect(() => {
+    const contentInterval = setInterval(() => {
+      setContentIndex((prevIndex) => (prevIndex + 1) % contentList.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(contentInterval);
+    };
+  }, []);
   return (
     <>
       {/* Carousels */}
-        <div
+
+
+
+      <div className="video-banner-container">
+      <video id="video" autoPlay loop className="mainhome-vdeo">
+        <source src={mainhomevideo} type="video/mp4" />
+      </video>
+      <div className="content-overlay text-center">{contentList[contentIndex]}</div>
+    </div>
+        {/* <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -188,7 +216,7 @@ const Home = () => {
 
           <span class="visually-hidden">Next</span>
         </button>
-        </div>
+        </div> */}
 
       {/* cards */}
 

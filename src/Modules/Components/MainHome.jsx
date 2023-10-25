@@ -32,14 +32,15 @@ import Slide4 from "./MainHomeImgs/testimonials-image4.png";
 import Slide5 from "./MainHomeImgs/testimonials-image5.png";
 import Avatar1 from "./Images/avatar1.jpg";
 import Avatar2 from "./Images/avatar2.jpg";
-import SliderImg1 from "./Images/slide-image5.png";
-import SliderImg2 from "./Images/slide-image4.png";
-import SliderImg3 from "./Images/Slider-img3.png";
+// import SliderImg1 from "./Images/slide-image5.png";
+// import SliderImg2 from "./Images/slide-image4.png";
+// import SliderImg3 from "./Images/Slider-img3.png";
 import KnowledgeImg2 from "./MainHomeImgs/knowledge-center2.png";
 import WhatOffer from "./MainHomeImgs/what-we-offer.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter1 from "./MainHomeImgs/newsletter-image1.png";
 import Newsletter2 from "./MainHomeImgs/newsletter-image2.png";
+import mainhomevideo from "./MainHomeImgs/mainhomevideo.mp4";
 import "animate.css";
 import {
   faUser,
@@ -136,11 +137,35 @@ export default function MainHome() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+  const contentList = [
+    "Experience The Digital Power",
+    "Explore The Innovation and Creativity",
+    "Excel The Competitive Edge",
+  ];
+  const [contentIndex, setContentIndex] = useState(0);
 
+
+  useEffect(() => {
+    const contentInterval = setInterval(() => {
+      setContentIndex((prevIndex) => (prevIndex + 1) % contentList.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(contentInterval);
+    };
+  }, []);
   return (
     <>
       {/* Carousels */}
-      <div
+      <div className="video-banner-container">
+      <video id="video" autoPlay loop className="mainhome-vdeo">
+        <source src={mainhomevideo} type="video/mp4" />
+      </video>
+      <div className="content-overlay text-center">{contentList[contentIndex]}</div>
+    </div>
+
+
+      {/* <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -234,7 +259,8 @@ export default function MainHome() {
 
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
+ 
 
       {/* cards */}
       <div className="mainhome-card-backgroundcolor">
@@ -1189,8 +1215,9 @@ export default function MainHome() {
                   <br /> NEWSLETTER
                 </h1>
                 <p className="newsletter-section-para text-justify">
-                  Discover our latest products and exclusive offers, designed <br></br> to
-                  enhance your lifestyle and make every day a little more <br></br>
+                  Discover our latest products and exclusive offers, designed{" "}
+                  <br></br> to enhance your lifestyle and make every day a
+                  little more <br></br>
                   extraordinary.
                 </p>
                 <form>

@@ -1,3 +1,11 @@
+
+.blogbanner-vdeo{
+width: 100%;
+object-fit: cover;
+height: 650px;
+}
+
+
 .blog-bg-color {
   background-color: rgba(216, 220, 220, 0.3);
 }
