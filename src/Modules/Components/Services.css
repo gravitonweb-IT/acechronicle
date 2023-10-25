@@ -1,13 +1,8 @@
-
 .servicebanner-vdeo{
 width: 100%;
 object-fit: cover;
 height: 650px;
 }
-
-
-
-
 .some-cards2 {
   background-color: #24262a !important;
   margin-bottom: -2rem;
@@ -197,4 +192,12 @@ height: 650px;
   }
 }
 
+/* _new-code */
+.services-second-section{
+  background-color: #24262a !important;
+}
+.services-button-section{
+  background-color: #3b6d6e !important;
+  border: none !important;
+}
 

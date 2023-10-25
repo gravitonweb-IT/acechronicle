@@ -164,8 +164,8 @@ export default function MainHome() {
       <div className="content-overlay text-center">{contentList[contentIndex]}</div>
     </div>
 
-
-      {/* <div
+{/* 
+       <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -259,7 +259,7 @@ export default function MainHome() {
 
           <span class="visually-hidden">Next</span>
         </button>
-      </div> */}
+      </div>  */}
  
 
       {/* cards */}
@@ -1229,7 +1229,7 @@ export default function MainHome() {
                     />
                   </div>
 
-                  <button type="submit" className="btn btn-outline-light mt-3">
+                  <button type="submit" className="btn btn-outline-light mt-3 mb-3">
                     Signup to Newsletter
                   </button>
                 </form>
