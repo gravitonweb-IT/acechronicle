@@ -273,38 +273,6 @@
 .main-home-rating-title {
   color: #ffffff;
 }
-
-/* experience */
-.main-home-experience {
-  height: 60vh;
-  padding: 0 60px;
-}
-@media screen and (max-width: 992px) {
-  .main-home-experience {
-    height: auto;
-    padding: 0px;
-    padding-top: 30px;
-  }
-}
-.main-home-exp-heading {
-  font-size: 47px;
-  line-height: 49px;
-  font-weight: 700;
-  color: #3b6d6e;
-}
-.main-home-exp-paragraph {
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #656d78;
-}
-.main-home-exp-paragraph1 {
-  line-height: 26px;
-  color: #848892;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 /* offer */
 .main-home-offer-bg {
   background-color: #24262a;

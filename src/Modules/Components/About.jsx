@@ -14,7 +14,10 @@ import slicksection1 from "./AboutImg/slicksection1.jpg";
 import slicksection2 from "./AboutImg/slicksection2.jpg";
 import slicksection3 from "./AboutImg/slicksection3.jpg";
 import slicksection4 from "./AboutImg/slicksection4.jpg";
-import slicksection5 from "./AboutImg/slicksection5.png";
+import slicksection5 from "./AboutImg/about-slider1.avif";
+import slicksection6 from "./AboutImg/about-slider2.avif";
+import slicksection7 from "./AboutImg/about-slider3.jpg";
+import slicksection8 from "./AboutImg/about-slider4.jpg";
 import SliderIcon1 from "./Images/slider-icon1.jpg";
 import SliderIcon2 from "./Images/slider-icon2.jpg";
 import SliderIcon3 from "./Images/slider-icon3.jpg";
@@ -124,8 +127,17 @@ const About = () => {
         </div>
       </div>
 
+      {/* content-part */}
+      <div className="container pt-4">
+        <h1 className="about-content-heading1">Welcome to Ace Chronicle</h1>
+        <p className="">
+          Where Strategy Meets Creativity. Your comprehensive solution for
+          planning, modeling, and content development.
+        </p>
+      </div>
+
       {/* section1 */}
-      <div class="container mt-4">
+      <div class="container pt-5">
         <div class="row">
           {/* <!--ADD CLASSES HERE d-flex align-items-stretch--> */}
           <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
@@ -185,16 +197,17 @@ const About = () => {
       </div>
 
       {/* section2 */}
-      <div className="aboutsection3">
+      <div className="aboutsection2">
         <div className="container">
           <div className="row">
             <div class="col-md-6">
-              <h1>All You Need In One Theme</h1>
-              <p className="text-[#848892] text-justify">
+              <h1 className="text-[#3b6d6e]">All You Need In One Theme</h1>
+              <p className="text-[#848892] text-justify mt-3">
                 From content ideation and strategy formulation to development
                 and optimization,<br></br> we offer an all-encompassing suite of
-                services. Whether launching a new <br></br> brand or reinventing an
-                existing one, Ace Chronicle is your go-to content<br></br> partner.
+                services. Whether launching a new <br></br> brand or reinventing
+                an existing one, Ace Chronicle is your go-to content<br></br>{" "}
+                partner.
               </p>
             </div>
 
@@ -202,7 +215,10 @@ const About = () => {
               <div className="wrapper">
                 <div className="skills">
                   <div className="details">
-                    <span>Strategy Development: Laying down the roadmap for content success.</span>
+                    <span>
+                      Strategy Development: Laying down the roadmap for content
+                      success.
+                    </span>
                     <span>100%</span>
                   </div>
                   <div class="bar">
@@ -211,7 +227,10 @@ const About = () => {
                 </div>
                 <div className="skills">
                   <div className="details">
-                    <span>Content Creation: Tailored narratives that resonate with your audience.</span>
+                    <span>
+                      Content Creation: Tailored narratives that resonate with
+                      your audience.
+                    </span>
                     <span>93%</span>
                   </div>
                   <div class="bar">
@@ -220,7 +239,10 @@ const About = () => {
                 </div>
                 <div className="skills">
                   <div className="details">
-                    <span>Market Research & Insights: Understanding trends to ensure content relevancy.</span>
+                    <span>
+                      Market Research & Insights: Understanding trends to ensure
+                      content relevancy.
+                    </span>
                     <span>86%</span>
                   </div>
                   <div class="bar">
@@ -229,7 +251,10 @@ const About = () => {
                 </div>
                 <div className="skills">
                   <div className="details">
-                    <span>Content Optimization: Fine-tuning content for maximum performance.</span>
+                    <span>
+                      Content Optimization: Fine-tuning content for maximum
+                      performance.
+                    </span>
                     <span>91%</span>
                   </div>
                   <div class="bar">
@@ -251,7 +276,8 @@ const About = () => {
                 <i className="bi bi-person-fill icon"></i>
                 <h5 className="aboutus-card-title ">User-Focused Approach</h5>
                 <p className="card-text aboutus-text text">
-                 User-focused approach ensures products meet needs and delights customers effectively.
+                  User-focused approach ensures products meet needs and delights
+                  customers effectively.
                 </p>
               </div>
             </div>
@@ -265,7 +291,8 @@ const About = () => {
                 <h5 className="aboutus-card-title">Constant Evolution</h5>
 
                 <p className="card-text aboutus-text">
-                Constant evolution drives progress, adaptability, and innovation in every aspect.
+                  Constant evolution drives progress, adaptability, and
+                  innovation in every aspect.
                 </p>
               </div>
             </div>
@@ -279,7 +306,8 @@ const About = () => {
                 <h5 className="aboutus-card-title">Quick Support</h5>
 
                 <p className="card-text aboutus-text">
-                Quick support ensures customer satisfaction and resolves issues promptly and effectively.
+                  Quick support ensures customer satisfaction and resolves
+                  issues promptly and effectively.
                 </p>
               </div>
             </div>
@@ -293,7 +321,8 @@ const About = () => {
                 <h5 className="aboutus-card-title">Knowledge Sharing</h5>
 
                 <p className="card-text aboutus-text">
-                Knowledge sharing fosters collaboration, empowers growth, and cultivates a culture of continuous learning.
+                  Knowledge sharing fosters collaboration, empowers growth, and
+                  cultivates a culture of continuous learning.
                 </p>
               </div>
             </div>
@@ -340,64 +369,106 @@ const About = () => {
       <div className="container-fluid mt-3">
         <div className="slicksection">
           <Slider {...settings3}>
-            <div>
-              <img src={slicksection} alt="" style={{ width: "100%" }} />
+            <div className="about-effect-box">
+              <div>
+                <img
+                  src={slicksection5}
+                  alt=""
+                  style={{ width: "100%", height: "300px" }}
+                />
+              </div>
+
+              <div class="about-effect-layer">
+                <h4 className="text-2xl font-semibold">
+                  Craft authentic narratives and brand stories.
+                </h4>
+              </div>
             </div>
-            <div>
-              <img src={slicksection1} alt="" style={{ width: "100%" }} />
+
+            <div className="about-effect-box">
+              <div>
+                <img
+                  src={slicksection6}
+                  alt=""
+                  style={{ width: "100%", height: "300px" }}
+                />
+              </div>
+
+              <div class="about-effect-layer">
+                <h4 className="text-2xl font-semibold">
+                  Consistent and compelling brand messaging.
+                </h4>
+              </div>
             </div>
-            <div>
-              <img src={slicksection2} alt="" style={{ width: "100%" }} />
+
+            <div className="about-effect-box">
+              <div>
+                <img
+                  src={slicksection7}
+                  alt=""
+                  style={{ width: "100%", height: "300px" }}
+                />
+              </div>
+
+              <div class="about-effect-layer">
+                <h4 className="text-2xl font-semibold">
+                  Create content that resonates and drives results.
+                </h4>
+              </div>
             </div>
-            <div>
-              <img src={slicksection3} alt="" style={{ width: "100%" }} />
-            </div>
-            <div>
-              <img src={slicksection4} alt="" style={{ width: "100%" }} />
+
+            <div className="about-effect-box">
+              <div>
+                <img
+                  src={slicksection8}
+                  alt=""
+                  style={{ width: "100%", height: "300px" }}
+                />
+              </div>
+
+              <div class="about-effect-layer">
+                <h4 className="text-2xl font-semibold">
+                  Optimize content for maximum effectiveness.
+                </h4>
+              </div>
             </div>
           </Slider>
         </div>
       </div>
 
-      {/* section4 */}
-      {/* <div className="about-background-color1">
-        <Container>
-          <Row>
-            <Col xs={12} sm={6} className="mb-3">
-              <img src={aboutushero} alt="" className="aboutsection6" />
-            </Col>
-            <Col xs={12} sm={6} className="d-flex items-center">
-              <div>
-                <h1 className="about-girl-image1">Set Your Creativity Free</h1>
-                <p className="mt-3 text-[#848892]">
-                  In the boundless expanse of imagination, worlds unfurl, dreams
-                  take flight, and words weave enchanting tales of wonder and
-                  discovery.
-                </p>
-                <Row className="mt-4">
-                  <Col xs={12} sm={6}>
-                    <div className="text-[#848892]">What is WooCommerce?</div>
-                    <hr className="text-[#848892]" />
-                    <div className="text-[#848892]">
-                      Can I Sell Items With This Theme?
-                    </div>
-                    <hr className="text-[#848892]" />
-                    <div className="text-[#848892]">What is Layer Slider?</div>
-                    <hr className="text-[#848892]" />
-                    <div className="text-[#848892]">
-                      What is WPBakery Page Builder?
-                    </div>
-                    <hr className="text-[#848892]" />
-                    <div className="text-[#848892]">
-                      Is This Theme Optimized?
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div> */}
+      {/*section-4*/}
+
+      <div className="experience-background">
+      <Container>
+        <Row className="d-flex align-items-center main-home-experience">
+          <Col md={4}>
+            <div>
+              <h6 className="main-home-exp-heading mb-0">Our</h6>
+              <h6 className="main-home-exp-heading">Experience</h6>
+              <p className="main-home-exp-paragraph mt-3">
+                A multifaceted creative digital media<br></br> management
+                agency.
+              </p>
+            </div>
+          </Col>
+          <Col md={8}>
+            <p className="main-home-exp-paragraph1 text-justify">
+              Ace Chronicle has worked with a diverse array of companies and
+              individuals. We have helped businesses establish their websites,
+              develop their customer base, create brand value, and revamp their
+              image with a team of experts having years of experience. Ace
+              Chronicle has assisted numerous national and international
+              businesses to attain undeniable recognition by using expertise,
+              creativity, and talent. We lead the design, development, and
+              implementation of content while helping clients cut costs by an
+              average of 15%. Aimed at assisting small, medium to large
+              businesses in reaching the digital platform and connecting with a
+              larger customer base thereby resulting in higher revenue turnover.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+      </div>
 
       {/* section5 */}
       <div className="client-slider">

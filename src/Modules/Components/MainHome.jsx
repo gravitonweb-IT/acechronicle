@@ -24,6 +24,7 @@ import image5 from "./MainHomeImgs/Design-That-Pops-Out.jpg";
 import image6 from "./MainHomeImgs/Marketing-With-A-Twist1.jpg";
 import image7 from "./MainHomeImgs/Social-Media-Reach-That-You-Need.jpg";
 import image8 from "./MainHomeImgs/Futuristic-Strategies-A-Big-Yes.jpg";
+import image10 from "./MainHomeImgs/strategy-mainhome-image.avif";
 import image9 from "./MainHomeImgs/Exclusively-Customised-services.jpg";
 import Slide1 from "./MainHomeImgs/testimonial-image1.png";
 import Slide2 from "./MainHomeImgs/testimonials-image2.png";
@@ -32,14 +33,13 @@ import Slide4 from "./MainHomeImgs/testimonials-image4.png";
 import Slide5 from "./MainHomeImgs/testimonials-image5.png";
 import Avatar1 from "./Images/avatar1.jpg";
 import Avatar2 from "./Images/avatar2.jpg";
-// import SliderImg1 from "./Images/slide-image5.png";
-// import SliderImg2 from "./Images/slide-image4.png";
-// import SliderImg3 from "./Images/Slider-img3.png";
+import SliderImg1 from "./Images/slide-image5.png";
+import SliderImg2 from "./Images/slide-image4.png";
+import SliderImg3 from "./Images/Slider-img3.png";
 import KnowledgeImg2 from "./MainHomeImgs/knowledge-center2.png";
 import WhatOffer from "./MainHomeImgs/what-we-offer.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter1 from "./MainHomeImgs/newsletter-image1.png";
-import Newsletter2 from "./MainHomeImgs/newsletter-image2.png";
 import mainhomevideo from "./MainHomeImgs/mainhomevideo.mp4";
 import "animate.css";
 import {
@@ -115,6 +115,8 @@ export default function MainHome() {
   const CustomPrevArrow = (props) => {
     return null;
   };
+
+  // slider-part
   const settings = {
     fade: false,
     infinite: true,
@@ -137,14 +139,14 @@ export default function MainHome() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+
+  // banner-part
   const contentList = [
     "Experience The Digital Power",
     "Explore The Innovation and Creativity",
     "Excel The Competitive Edge",
   ];
   const [contentIndex, setContentIndex] = useState(0);
-
-
   useEffect(() => {
     const contentInterval = setInterval(() => {
       setContentIndex((prevIndex) => (prevIndex + 1) % contentList.length);
@@ -164,8 +166,7 @@ export default function MainHome() {
       <div className="content-overlay text-center">{contentList[contentIndex]}</div>
     </div>
 
-{/* 
-       <div
+    {/* <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -447,7 +448,7 @@ export default function MainHome() {
             <div className="col-md-4 home-section-cards1">
               <Card className="group relative cursor-pointer items-center justify-center overflow-hidden border-0 rounded-0 transition-shadow mx-2 mx-md-2">
                 <div className="h-[26rem] w-[30rem]">
-                  <Card.Img src={image8} alt="" className="" />
+                  <Card.Img src={image10} alt="" className="" />
                 </div>
 
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/90 group-hover:via-black/90 group-hover:to-black/90"></div>
@@ -894,38 +895,6 @@ export default function MainHome() {
         </Container>
       </div>
 
-      {/*experience*/}
-
-      {/* <Container>
-        <Row className="d-flex align-items-center main-home-experience">
-          <Col md={4}>
-            <div>
-              <h6 className="main-home-exp-heading mb-0">Our</h6>
-              <h6 className="main-home-exp-heading">Experience</h6>
-              <p className="main-home-exp-paragraph mt-3">
-                A multifaceted creative digital media<br></br> management
-                agency.
-              </p>
-            </div>
-          </Col>
-          <Col md={8}>
-            <p className="main-home-exp-paragraph1 text-justify">
-              Ace Chronicle has worked with a diverse array of companies and
-              individuals. We have helped businesses establish their websites,
-              develop their customer base, create brand value, and revamp their
-              image with a team of experts having years of experience. Ace
-              Chronicle has assisted numerous national and international
-              businesses to attain undeniable recognition by using expertise,
-              creativity, and talent. We lead the design, development, and
-              implementation of content while helping clients cut costs by an
-              average of 15%. Aimed at assisting small, medium to large
-              businesses in reaching the digital platform and connecting with a
-              larger customer base thereby resulting in higher revenue turnover.
-            </p>
-          </Col>
-        </Row>
-      </Container> */}
-
       {/*Steeper-start*/}
       <div className="main-home-offer-bg">
         <Container>
@@ -1161,46 +1130,6 @@ export default function MainHome() {
       </div>
 
       {/* newsletter-start */}
-
-      {/* <div
-        className="home-banner-section d-none d-lg-block"
-        id="newsletter-banner-parallax"
-      >
-        <div className="newsletter-section1 position-relative ">
-          <div className="position-absolute top-40 start-50  newsletter-section-content ">
-            <h1 className="text-white font-bold newsletter-section-heading">
-              SUBSCRIBE TO OUR
-              <br /> NEWSLETTER
-            </h1>
-
-            <p className="text-white newsletter-section-para ">
-              <span className="">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation this content.
-              </span>
-            </p>
-
-            <form>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Email*"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="btn btn-outline-light mt-3 banner-button-section"
-              >
-                Signup to Newsletter
-              </button>
-            </form>
-          </div>
-        </div>
-      </div> */}
 
       <div className="newsletter-bg-color">
         <Container className="pt-5">
