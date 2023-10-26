@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from "react";
 import { Link, useLocation } from "react-router-dom";
-import image1 from "../Modules/Components/Images/ace_logo_dark.png";
+// import image1 from "../Modules/Components/Images/ace_logo_dark.png";
+import image1 from "../Modules/Components/Images/logo.png";
 import "./Navbar.css";
 import "animate.css";
 
