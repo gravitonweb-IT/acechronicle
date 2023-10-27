@@ -46,9 +46,8 @@ li.blog-item.active {
     font-size: 30px;
   }
 }
-.blog-ordered-item{
-  list-style-type: decimal;
-  color:#848892 ;
+.blog-icon-image img{
+  border-radius: 50%;
 }
 
 

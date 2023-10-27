@@ -15,6 +15,10 @@ import ContentSpeak from "./Modules/Components/ContentSpeak";
 import DesignPop from "./Modules/Components/DesignPop";
 import MarketTwist from "./Modules/Components/MarketTwist";
 import Exclusive from "./Modules/Components/Exclusive";
+import Blog1 from "./Modules/Components/Blog1";
+import Blog2 from "./Modules/Components/Blog2";
+import Blog3 from "./Modules/Components/Blog3";
+import Blog4 from "./Modules/Components/Blog4";
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
         <Route path="/designpop" element={<DesignPop />} />
         <Route path="/markettwist" element={<MarketTwist />} />
         <Route path="/exclusive" element={<Exclusive />} />
+        <Route path="/blog1" element={<Blog1 />} />
+        <Route path="/blog2" element={<Blog2 />} />
+        <Route path="/blog3" element={<Blog3 />} />
+        <Route path="/blog4" element={<Blog4 />} />
       </Routes>
 
       <Footer1 />

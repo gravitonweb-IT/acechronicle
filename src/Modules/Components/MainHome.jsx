@@ -11,6 +11,11 @@ import Blog3 from "./MainHomeImgs/blog3.jpg";
 import Blog4 from "./MainHomeImgs/blog4.jpg";
 import Blog5 from "./MainHomeImgs/blog5.jpg";
 import Blog6 from "./MainHomeImgs/blog6.jpg";
+import Blog13 from "./BlogImgs/blog-img-13.jpg";
+import Blog14 from "./BlogImgs/blog-img-14.jpg";
+import Blog15 from "./BlogImgs/blog-img-15.jpg";
+import Blog16 from "./BlogImgs/blog-img-16.jpg";
+import Icon from "./BlogImgs/user-icon-image.png";
 import SliderIcon1 from "./Images/slider-icon1.jpg";
 import SliderIcon2 from "./Images/slider-icon2.jpg";
 import SliderIcon3 from "./Images/slider-icon3.jpg";
@@ -64,6 +69,7 @@ import {
   faFacebook,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "../../common/Navbar";
 
 export default function MainHome() {
   const [projects, setProjects] = useState(0);
@@ -160,13 +166,15 @@ export default function MainHome() {
     <>
       {/* Carousels */}
       <div className="video-banner-container">
-      <video id="video" autoPlay loop className="mainhome-vdeo">
-        <source src={mainhomevideo} type="video/mp4" />
-      </video>
-      <div className="content-overlay text-center">{contentList[contentIndex]}</div>
-    </div>
+        <video id="video" autoPlay loop className="mainhome-vdeo">
+          <source src={mainhomevideo} type="video/mp4" />
+        </video>
+        <div className="content-overlay text-center">
+          {contentList[contentIndex]}
+        </div>
+      </div>
 
-    {/* <div
+      {/* <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -261,7 +269,6 @@ export default function MainHome() {
           <span class="visually-hidden">Next</span>
         </button>
       </div>  */}
- 
 
       {/* cards */}
       <div className="mainhome-card-backgroundcolor">
@@ -1158,7 +1165,10 @@ export default function MainHome() {
                     />
                   </div>
 
-                  <button type="submit" className="btn btn-outline-light mt-3 mb-3">
+                  <button
+                    type="submit"
+                    className="btn btn-outline-light mt-3 mb-3"
+                  >
                     Signup to Newsletter
                   </button>
                 </form>
@@ -1193,108 +1203,87 @@ export default function MainHome() {
             <Row>
               <h2 className="knowledge-center-heading">Knowledge Center</h2>
               <Col md={4} className="mt-5">
-                <Link to="/blog" style={{ textDecoration: "none" }}>
-                  <div className="knowledge-center-images">
-                    <img src={Blog1}></img>
+                <Link to="/blog1" style={{ textDecoration: "none" }}>
+                  <div className="">
+                    <img src={Blog13}></img>
                   </div>
-                  <div>
-                    <h6 className="knowledge-center-short-heading">Treding</h6>
-                    <h2 className="knowledge-center-main-heading">
-                      10 Tips For Traveling With Friends
-                    </h2>
-                    <p className="knowledge-center-paragraph">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod ti...
+                  <div class=" blog-section-card p-3">
+                    <h5 class="text-black">
+                      The Power of SEO in Content Marketing
+                    </h5>
+                    <h6 className="text-[#aab3bc] mt-3">29 September 2016 </h6>
+                    <p className="text-[#848892]">
+                      Discover how SEO and content marketing enhances brand
+                      visibility, drives organic traffic, and increases
+                      conversions.
                     </p>
+                    <div className="d-flex">
+                      <div className="blog-icon-image">
+                        <img src={Icon}></img>
+                      </div>
+                      <div>
+                        <h6 className="pl-4 pt-2 text-black">Yashita</h6>
+                      </div>
+                    </div>
                   </div>
                 </Link>
               </Col>
+
               <Col md={4} className="mt-5">
-                <Link to="/blog" style={{ textDecoration: "none" }}>
-                  <div className="knowledge-center-images">
-                    <img src={Blog2}></img>
+                <Link to="/blog2" style={{ textDecoration: "none" }}>
+                  <div className="">
+                    <img src={Blog14}></img>
                   </div>
-                  <div>
-                    <h6 className="knowledge-center-short-heading">Treding</h6>
-                    <h2 className="knowledge-center-main-heading">
-                      15 Signs You're In Love With UX Design
-                    </h2>
-                    <p className="knowledge-center-paragraph">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod ti...
+                  <div class=" blog-section-card p-3">
+                    <h5 class="text-black">
+                      {" "}
+                      Exploring the Future of Digital Marketing
+                    </h5>
+                    <h6 className="text-[#aab3bc] mt-3">29 September 2016 </h6>
+                    <p className="text-[#848892]">
+                      The future of digital marketing and also find out the
+                      present trends in this article. Read the case studies to
+                      learn how to expand business.
                     </p>
+                    <div className="d-flex">
+                      <div className="blog-icon-image">
+                        <img src={Icon}></img>
+                      </div>
+                      <div>
+                        <h6 className="pl-4 pt-2 text-black">Anvi</h6>
+                      </div>
+                    </div>
                   </div>
                 </Link>
               </Col>
+
               <Col md={4} className="mt-5">
-                <Link to="/blog" style={{ textDecoration: "none" }}>
-                  <div className="knowledge-center-images">
-                    <img src={Blog3}></img>
+                <Link to="/blog3" style={{ textDecoration: "none" }}>
+                  <div className="">
+                    <img src={Blog16}></img>
                   </div>
-                  <div>
-                    <h6 className="knowledge-center-short-heading">
-                      Travel,Treding
-                    </h6>
-                    <h2 className="knowledge-center-main-heading">
-                      About Bicycle Touring<br></br> Pro
-                    </h2>
-                    <p className="knowledge-center-paragraph">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod ti...
+                  <div class=" blog-section-card p-3">
+                    <h5 class="text-black">
+                      Adopting AI for Business Process Automation
+                    </h5>
+                    <h6 className="text-[#aab3bc] mt-3">29 September 2016 </h6>
+                    <p className="text-[#848892]">
+                      In this article, learn how to unlock the power of AI and
+                      transform your business by automating & optimizing
+                      processes.
                     </p>
+                    <div className="d-flex">
+                      <div className="blog-icon-image">
+                        <img src={Icon}></img>
+                      </div>
+                      <div>
+                        <h6 className="pl-4 pt-2 text-black">Aditi</h6>
+                      </div>
+                    </div>
                   </div>
                 </Link>
               </Col>
             </Row>
-            {/* <Row>
-              <Col md={4} className="mt-5">
-                <div className="knowledge-center-images">
-                  <img src={Blog4}></img>
-                </div>
-                <div>
-                  <h6 className="knowledge-center-short-heading">Furniture</h6>
-                  <h2 className="knowledge-center-main-heading">
-                    Beautiful Product Pages
-                  </h2>
-                  <p className="knowledge-center-paragraph">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod ti...
-                  </p>
-                </div>
-              </Col>
-              <Col md={4} className="mt-5">
-                <div className="knowledge-center-images">
-                  <img src={Blog5}></img>
-                </div>
-                <div>
-                  <h6 className="knowledge-center-short-heading">Furniture</h6>
-                  <h2 className="knowledge-center-main-heading">
-                    Brand Colors
-                  </h2>
-                  <p className="knowledge-center-paragraph">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod ti...
-                  </p>
-                </div>
-              </Col>
-              <Col md={4} className="mt-5">
-                <div className="knowledge-center-images">
-                  <img src={Blog6}></img>
-                </div>
-                <div>
-                  <h6 className="knowledge-center-short-heading">
-                    Ideas, Interview, Treding
-                  </h6>
-                  <h2 className="knowledge-center-main-heading">
-                    Creat An Exceptional Blog For Exceptional Writing
-                  </h2>
-                  <p className="knowledge-center-paragraph">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod ti...
-                  </p>
-                </div>
-              </Col>
-            </Row> */}
           </div>
         </Container>
       </div>
