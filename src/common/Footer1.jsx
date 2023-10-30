@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from "./Images/Logo.png";
-import footer1 from './Images/footer1.jpg';
-import footer2 from './Images/footer2.jpg';
+import footer1 from './Images/footer5.svg';
+import footer2 from './Images/footer6.svg';
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -32,7 +32,7 @@ export default function Footer1() {
                  <img src={footer1}></img>
                 </div>
                 <div>
-                  <h6 className="footer-heading"> Exploring the Future of Digital Marketing</h6>
+                  <h6 className="footer-heading">The Power of SEO in Content Marketing</h6>
                   <span className="footer-subheading">September 29, 2016</span>
                 </div>
               </li>
@@ -44,7 +44,7 @@ export default function Footer1() {
                  <img src={footer2}></img>
                 </div>
                 <div>
-                  <h6 className="footer-heading">The Power of SEO in Content Marketing</h6>
+                  <h6 className="footer-heading">Exploring the Future of Digital Marketing</h6>
                   <span className="footer-subheading">September 29, 2016</span>
                 </div>
               </li>

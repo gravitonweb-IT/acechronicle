@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container,Row, Col } from 'react-bootstrap';
 import Blog15 from "./BlogImgs/blog-img-15.jpg";
-import footer1 from './BlogImgs/footer1.jpg';
-import footer2 from './BlogImgs/footer2.jpg';
-import footer3 from './BlogImgs/footer3.jpg';
+import footer1 from "./BlogImgs/footer5.svg";
+import footer2 from "./BlogImgs/footer6.svg";
+import footer3 from "./BlogImgs/footer7.svg";
+import footer4 from "./BlogImgs/footer8.svg";
 import Icon from "./BlogImgs/user-icon-image.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faPinterestP, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -306,13 +307,14 @@ export default function Blog4() {
            <div className="blog-input-box"></div>
  
            <div className="blog-input-box">
+           <h3 className="text-[#3b6d6e]">Latest Post</h3>
            <ul className="p-0">
               <li className="main-blog-list mt-5">
                 <div className='blog1-image'>
                  <img src={footer1}></img>
                 </div>
                 <div>
-                  <h6 className="blog1-heading">10 Tips for Traveling with friends</h6>
+                  <h6 className="blog1-heading">The Power of SEO in Content Marketing</h6>
                   <h6 className="blog1-subheading">September 29, 2016</h6>
                 </div>
               </li>
@@ -321,8 +323,17 @@ export default function Blog4() {
                  <img src={footer2}></img>
                 </div>
                 <div>
-                  <h6 className="blog1-heading">15 Signs you're in Love with UX Designs</h6>
-                  <h6 className="blog1-subheading">April 29, 2016</h6>
+                  <h6 className="blog1-heading">Exploring the Future of Digital Marketing</h6>
+                  <h6 className="blog1-subheading">September 29, 2016</h6>
+                </div>
+              </li>
+              <li className="main-blog-list mt-5">
+                <div className='blog1-image'>
+                 <img src={footer4}></img>
+                </div>
+                <div>
+                  <h6 className="blog1-heading">Adopting AI for Business Process Automation</h6>
+                  <h6 className="blog1-subheading">September 29, 2016</h6>
                 </div>
               </li>
               <li className="main-blog-list mt-5">
@@ -330,7 +341,7 @@ export default function Blog4() {
                  <img src={footer3}></img>
                 </div>
                 <div>
-                  <h6 className="blog1-heading">About Bicycle Touring Pro</h6>
+                  <h6 className="blog1-heading">Content Writing Services for E-commerce</h6>
                   <h6 className="blog1-subheading">September 29, 2016</h6>
                 </div>
               </li>
@@ -364,6 +375,7 @@ export default function Blog4() {
           </ul>
            </div>
           </Col>
+
           </Row>
         </Container>
     </div>
