@@ -3,31 +3,20 @@ import "./Career.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CareerBanner from "./contentImg/career-banner-image1.png";
+import Navbar from "../../common/Navbar";
 
 const Career = () => {
   return (
     <>
-      {/* <div className='career-bg-color'>
-    <Container>
-      <Row className='p-3'>
-        <Col md={6}>
-          <h1 className='career-heading'>Career With Us</h1>
-        </Col>
-        <Col md={6}>
-          <div className='d-flex justify-content-end align-items-center h-100'>
-            <Link to="/" className="career-link"><span className='career-subheading'>Home</span></Link>
-            <span className='career-subheading'>&nbsp;&gt;&nbsp;</span>
-            <span className='career-subheading'>Career with us</span>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-      </div> */}
+   
 
       <div
         className="content-section1 position-relative d-flex justify-content-center
        align-items-center"
       >
+        <div className="our-nav">
+          <Navbar/>
+        </div>
         <img
           src={CareerBanner}
           alt="Content Banner"

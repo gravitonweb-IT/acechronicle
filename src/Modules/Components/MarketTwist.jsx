@@ -1,11 +1,16 @@
 import React from "react";
 import ContentBanner from "./contentImg/content-banner1.jpg";
 import "./MarketTwist.css";
+import Navbar from "../../common/Navbar";
 
 export default function MarketTwist() {
   return (
     <>
       <div className="content-section1 position-relative">
+        <div className="our-nav">
+          <Navbar/>
+
+        </div>
         <img
           src={ContentBanner}
           alt="Content Banner"

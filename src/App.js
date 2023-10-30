@@ -23,7 +23,7 @@ import Blog4 from "./Modules/Components/Blog4";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route index path="/" element={<MainHome />} />
         <Route index path="/home" element={<Home />} />

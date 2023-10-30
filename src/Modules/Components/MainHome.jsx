@@ -45,7 +45,7 @@ import KnowledgeImg2 from "./MainHomeImgs/knowledge-center2.png";
 import WhatOffer from "./MainHomeImgs/what-we-offer.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter1 from "./MainHomeImgs/newsletter-image1.png";
-import mainhomevideo from "./MainHomeImgs/mainhomevideo.mp4";
+import mainhomegif from "./MainHomeImgs/mainhomegif.gif";
 import "animate.css";
 import {
   faUser,
@@ -70,6 +70,8 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "../../common/Navbar";
+
+
 
 export default function MainHome() {
   const [projects, setProjects] = useState(0);
@@ -165,10 +167,13 @@ export default function MainHome() {
   return (
     <>
       {/* Carousels */}
-      <div className="video-banner-container">
-        <video id="video" autoPlay loop className="mainhome-vdeo">
-          <source src={mainhomevideo} type="video/mp4" />
-        </video>
+      <div className="gif-banner-container">
+     <div className="our-nav">
+      <Navbar/>
+     </div>
+        <img src = {mainhomegif} className="main-home-gif"> 
+        
+        </img>
         <div className="content-overlay text-center">
           {contentList[contentIndex]}
         </div>

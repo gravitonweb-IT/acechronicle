@@ -1,12 +1,16 @@
 import React from "react";
 import ContentBanner from "./contentImg/content-banner1.jpg";
 import "./ContentSpeak.css";
+import Navbar from "../../common/Navbar";
 
 
 export default function ContentSpeak() {
   return (
     <>
       <div className="content-section1 position-relative">
+        <div className="our-nav">
+<Navbar/>
+        </div>
         <img
           src={ContentBanner}
           alt="Content Banner"

@@ -1,14 +1,19 @@
 /* carousels */
 
-.video-banner-container {
+.gif-banner-container{
   position: relative;
   width: 100%;
 }
-
-.mainhome-vdeo{
+.main-home-gif{
   width: 100%;
   object-fit: cover;
-  height: 650px;
+  height: 700px;
+}
+.our-nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .content-overlay {
   position: absolute;

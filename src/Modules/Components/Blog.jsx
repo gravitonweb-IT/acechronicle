@@ -7,8 +7,9 @@ import Blog14 from "./BlogImgs/blog-img-14.jpg";
 import Blog15 from "./BlogImgs/blog-img-15.jpg";
 import Blog16 from "./BlogImgs/blog-img-16.jpg";
 import Icon from "./BlogImgs/user-icon-image.png";
-import blogbannervideo from "./BlogImgs/blogpagevideo.mp4";
+import blogbannergiff from "./BlogImgs/blogpagegif.gif";
 import { Link } from "react-router-dom";
+import Navbar from "../../common/Navbar";
 
 const Blog = () => {
   const [toggle, setToggle] = useState(1);
@@ -17,11 +18,14 @@ const Blog = () => {
   }
   return (
     <>
-      <div className="video-blog-container">
-        <video id="video" autoPlay loop className="blogbanner-vdeo">
-          <source src={blogbannervideo} type="video/mp4" />
-        </video>
-        <div className="content-overlay text-center">An Awesome Blog </div>
+      <div className="gif-blog-container">
+        <div className="our-nav">
+          <Navbar />
+        </div>
+
+        <img src={blogbannergiff} className="blog-home-gif"></img>
+
+        <div className="content-overlay1 ">Knowledge <br/>Center </div>
       </div>
 
       <div className="second-blog-section pt-5">
@@ -69,7 +73,6 @@ const Blog = () => {
 
               <div className={toggle === 1 ? "show-content" : "content"}>
                 <div className="row mt-5">
-
                   <div className="col-md-3 mb-3">
                     <Link to="/blog1" style={{ textDecoration: "none" }}>
                       <div className="">
@@ -186,14 +189,12 @@ const Blog = () => {
                       </div>
                     </Link>
                   </div>
-
-                 
                 </div>
               </div>
 
               <div className={toggle === 2 ? "show-content" : "content"}>
                 <div className="row mt-5">
-                <div className="col-md-3 mb-3">
+                  <div className="col-md-3 mb-3">
                     <Link to="/blog1" style={{ textDecoration: "none" }}>
                       <div className="">
                         <img src={Blog13}></img>
@@ -308,7 +309,7 @@ const Blog = () => {
 
               <div className={toggle === 4 ? "show-content" : "content"}>
                 <div className="row mt-5">
-                <div className="col-md-3">
+                  <div className="col-md-3">
                     <Link to="/blog3" style={{ textDecoration: "none" }}>
                       <div className="">
                         <img src={Blog16}></img>
@@ -369,7 +370,7 @@ const Blog = () => {
 
               <div className={toggle === 6 ? "show-content" : "content"}>
                 <div className="row mt-5">
-                <div className="col-md-3">
+                  <div className="col-md-3">
                     <Link to="/blog4" style={{ textDecoration: "none" }}>
                       <div className="">
                         <img src={Blog15}></img>

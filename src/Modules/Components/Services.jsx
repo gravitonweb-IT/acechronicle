@@ -9,7 +9,7 @@ import CardImages2 from "./Service images/SMO.jpg";
 import CardImages3 from "./Service images/DIGITAL-MARKETING.jpg";
 import CardImages4 from "./Service images/ContentStrategy.jpg";
 import CardImages5 from "./Service images/CUSTOMISED-SERVICES.jpg";
-import servicebanner from "./Service images/servicepagevideo.mp4";
+import servicebannergif from "./Service images/servicepagegif.gif";
 import ServicesBanner from "./contentImg/services-banner-image1.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,6 +18,7 @@ import {
   faTachographDigital,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
+import Navbar from "../../common/Navbar";
 
 const Services = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -32,11 +33,14 @@ const Services = () => {
 
   return (
     <>
-      <div className="video-services-container">
-        <video id="video" autoPlay loop className="servicebanner-vdeo">
-          <source src={servicebanner} type="video/mp4" />
-        </video>
-        <div className="content-overlay text-center">Services</div>
+      <div className="gif-service-container">
+        <div className="our-nav">
+         <Navbar/>
+        </div>
+
+        <img src={servicebannergif} className="service-home-gif"></img>
+
+        <div className="content-overlay2 text-center">Services </div>
       </div>
       
       {/* <div

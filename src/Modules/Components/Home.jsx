@@ -32,7 +32,8 @@ import SliderIcon5 from "./Images/slider-icon5.jpg";
 // import SliderImg1 from "./Images/slide-image5.png";
 // import SliderImg2 from "./Images/slide-image4.png";
 // import SliderImg3 from "./Images/Slider-img3.png";
-import mainhomevideo from "./MainHomeImgs/mainhomevideo.mp4";
+import mainhomegif from "./MainHomeImgs/mainhomegif.gif";
+import Navbar from "../../common/Navbar";
 const Home = () => {
   const [projects, setProjects] = useState(0);
   const [startups, setStartups] = useState(0);
@@ -108,14 +109,20 @@ const Home = () => {
     <>
       {/* Carousels */}
 
-
-
-      <div className="video-banner-container">
-      <video id="video" autoPlay loop className="mainhome-vdeo">
-        <source src={mainhomevideo} type="video/mp4" />
-      </video>
-      <div className="content-overlay text-center">{contentList[contentIndex]}</div>
+      <div className="gif-banner-container">
+      <div className="our-nav">
+        <Navbar/>
+      </div>
+      <img src = {mainhomegif} className="main-home-gif">
+      </img>
+      <div className="content-overlay text-center">
+        {contentList[contentIndex]}
+      </div>
     </div>
+
+   
+
+
         {/* <div
         id="carouselExampleControls"
         class="carousel slide"

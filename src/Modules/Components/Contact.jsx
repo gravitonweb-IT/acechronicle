@@ -17,6 +17,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "@emailjs/browser";
+import Navbar from "../../common/Navbar";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -58,6 +59,9 @@ export default function Contact() {
         className="content-section1 position-relative d-flex justify-content-center
        align-items-center"
       >
+        <div className="our-nav">
+          <Navbar/>
+        </div>
         <img
           src={ContactBanner}
           alt="Content Banner"

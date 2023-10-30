@@ -44,3 +44,11 @@
   list-style: disc;
   font-size: 17px;
 }
+@media screen and (max-width:576px) {
+  .content-section-image1{
+    height: 30vh;
+    width: 100%;
+    
+  }
+}
+
