@@ -46,18 +46,18 @@ export default function Blog3() {
                     Adopting AI for Business Process Automation
                   </h2>
                   <h4 className="text-[#3b6d6e] mt-4">Meta title:</h4>
-                  <p className="text-[#848892]">
+                  <p className="text-black">
                     Transform Your Business Through Adopting AI for Automation &
                     Efficiency
                   </p>
                   <h4 className="text-[#3b6d6e]">Meta description:</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     In this article, learn how to unlock the power of AI and
                     transform your business by automating & optimizing
                     processes.
                   </p>
                   <h4 className="text-[#3b6d6e]">Introduction</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     In order to increase production and efficiency, businesses
                     are progressively automating manual and intellectual labor.
                     Intelligent automation also known as cognitive automation is
@@ -81,7 +81,7 @@ export default function Blog3() {
                   <h4 className="text-[#3b6d6e]">
                     How AI Can Help Automate & Optimize Business Processes
                   </h4>
-                  <p className="text-[#848892]">
+                  <p className="text-black">
                     The use of Artificial Intelligence (AI) in business
                     processes can help automate and optimize operations. By
                     leveraging AI, businesses can automate and optimize their
@@ -102,7 +102,7 @@ export default function Blog3() {
                     How to Successfully Implement an Artificial Intelligence
                     Solution For Your Business
                   </h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Implementing an Artificial Intelligence solution into a
                     business can be a daunting task. It requires careful
                     planning, the right resources, and a good understanding of
@@ -113,7 +113,7 @@ export default function Blog3() {
                   </p>
  
                   <h4 className="text-[#848892]">Understand AI</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Discover the capabilities of modern AI by spending some time
                     studying them. You should also make use of the wealth of
                     internet resources and tools available to you in order to
@@ -127,7 +127,7 @@ export default function Blog3() {
                   <h4 className="text-[#848892]">
                     Identify the challenges you want AI to solve
                   </h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     It is essential to determine the issues you want AI to
                     address in order to ensure that your AI strategy is
                     effective and successful. By understanding the problems that
@@ -139,7 +139,7 @@ export default function Blog3() {
                   </p>
  
                   <h4 className="text-[#848892]">Run a test AI project</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Implementing an AI project is a complex process that
                     requires careful planning and execution. By piloting an AI
                     project, organizations can gain valuable insights into how
@@ -152,7 +152,7 @@ export default function Blog3() {
                   <h4 className="text-[#848892]">
                     Observing and evaluating performance
                   </h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     While experimenting with AI might be a lot of fun, keep in
                     mind that it is still a commercial effort that needs to
                     provide results. Set quantifiable objectives you can check
@@ -168,7 +168,7 @@ export default function Blog3() {
                   </p>
  
                   <h4 className="text-[#3b6d6e]">Conclusion</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     In conclusion, AI has opened up a world of possibilities for
                     businesses of all sizes and industries. By leveraging the
                     power of AI, businesses can automate and optimize their
@@ -229,7 +229,7 @@ export default function Blog3() {
                 <div className="blog1-image-section">
                   <img src={Icon}></img>
                 </div>
-                <p className="text-[#848892] mt-3 text-justify">
+                <p className="text-black mt-3 text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                   necessitatibus eveniet aperiam quas animi voluptatibus
                   perspiciatis quidem eum nam quo consectetur facere et, fugit,

@@ -46,18 +46,18 @@ export default function Blog4() {
                     Writing Product Descriptions That Sell
                   </h2>
                   <h4 className="text-[#3b6d6e] mt-4">Meta title:</h4>
-                  <p className="text-[#848892]">
+                  <p className="text-black">
                     Boost Sales with Compelling Product Descriptions: SEO Tips
                   </p>
                   <h4 className="text-[#3b6d6e]">Meta description:</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Learn to transform ordinary descriptions into persuasive
                     tools. Learn how SEO-optimized content and social proof can
                     convert browsers into buyers.
                   </p>
  
                   <h2 style={{ color: "#3b6d6e" }}>Introduction</h2>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Product descriptions can make a big difference for online
                     stores. You've probably seen fashion descriptions for
                     clothing that instantly made you want to buy the product.
@@ -72,35 +72,36 @@ export default function Blog4() {
                   <h2 style={{ color: "#3b6d6e" }}>
                     Best Practices for Writing Product Descriptions
                   </h2>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                   Here are some of the best practices you can use for product description writing:
  
                   </p>
-                  <ol className="blog-ordered-item text-[#848892] pl-4">
+                  <ol className="blog-ordered-item text-black pl-4">
                     <li>
-                     <b>Understand your audience and write for them -</b>  To write
-                      product descriptions that resonate, understand your
+                     <b className="text-[#848892]">Understand your audience and write for them -</b> 
+                     To write product descriptions that resonate, understand your
                       audience's needs, pains, and goals. Base your descriptions
                       on what will appeal most to them. Whether it's fashion
                       descriptions for clothing or an accessory description,
                       knowing what your audience wants and highlighting those
                       features will matter the most.
+                     
                     </li>
                     <li>
-                      <b>Give all important information - </b>Provide all essential
+                      <b className="text-[#848892]">Give all important information - </b>Provide all essential
                       information clearly and leave no room for ambiguity.
                       Highlight key features, specifications, and benefits.
                       Clarity helps customers choose what they want, and they
                       will also be confident about what they are purchasing.
                     </li>
                     <li>
-                      <b>Provide more than features for your products -</b>Go beyond
+                      <b className="text-[#848892]">Provide more than features for your products -</b>Go beyond
                       features to emphasize benefits. Explain how the product
                       improves lives and solves problems in an impactful way for
                       customers.
                     </li>
                     <li>
-                     <b>Write scannable descriptions - </b>Use bullet points and
+                     <b className="text-[#848892]">Write scannable descriptions - </b>Use bullet points and
                       concise paragraphs so readers can skim and still get all
                       the information. Customers mostly prefer to scan the
                       product descriptions than to read every word. They just
@@ -108,26 +109,26 @@ export default function Blog4() {
                       want in a product.
                     </li>
                     <li>
-                    <b>Include relevant keywords - </b>This boosts search rankings
+                    <b className="text-[#848892]">Include relevant keywords - </b>This boosts search rankings
                       and ensures your descriptions reach the right people.
                       Including proper keywords will boost your SEO ranking and,
                       in turn, get you more sales!
                     </li>
                     <li>
-                     <b>Social Proofs - </b>Include social proof like reviews,
+                     <b className="text-[#848892]">Social Proofs - </b>Include social proof like reviews,
                       testimonials, and ratings. This builds trust and
                       credibility, which persuades potential buyers. Positive
                       feedback from previous customers is a powerful persuader
                       for potential buyers.
                     </li>
                     <li>
-                     <b>Placing keywords - </b>Strategically place keywords in meta
+                     <b className="text-[#848892]">Placing keywords - </b>Strategically place keywords in meta
                       titles, first sentences, and key sections to maximize
                       impact. Put it naturally in a sentence and avoid
                       overstuffing.
                     </li>
                     <li>
-                      <b>Keep it concise with less word count - </b>Balance being
+                      <b className="text-[#848892]">Keep it concise with less word count - </b>Balance being
                       concise while still providing valuable details. Aim for
                       the optimal word count that accomplishes both. Too little
                       information will also hurt your sales.
@@ -137,29 +138,29 @@ export default function Blog4() {
                   <h2 style={{ color: "#3b6d6e" }}>
                     Maximizing Product Descriptions for SEO and Sales
                   </h2>
-                  <ol  className="blog-ordered-item text-[#848892] pl-4">
+                  <ol  className="blog-ordered-item text-black pl-4">
                     <li>
-                     <b>Use a Mix of Text and Graphics - </b>Use both words and
+                     <b className="text-[#848892]">Use a Mix of Text and Graphics - </b>Use both words and
                       visuals like images or graphics. Visuals enhance
                       understanding and make the product more appealing.
                     </li>
                     <li>
-                      <b>Tell an engaging story - Blend</b> features and benefits into
+                      <b className="text-[#848892]">Tell an engaging story - Blend</b> features and benefits into
                       a story that engages readers. Show how the product fits
                       their lives while evoking emotion.
                     </li>
                     <li>
-                      <b>Be persuasive - </b>Use persuasive, conversion-oriented
+                      <b className="text-[#848892]">Be persuasive - </b>Use persuasive, conversion-oriented
                       language. Incorporate action words that ignite curiosity
                       and desire, compelling readers to take action.
                     </li>
                     <li>
-                     <b>Keep track of engagement and conversion rates -</b> Your
+                     <b className="text-[#848892]">Keep track of engagement and conversion rates -</b> Your
                       description tactics should be continually improved
                       depending on data and analytics insights.
                     </li>
                     <li>
-                      <b>Understanding Where to position Keywords is Important -</b>
+                      <b className="text-[#848892]">Understanding Where to position Keywords is Important -</b>
                       Finding the proper keywords is just half the fight, and
                       the other half is understanding where to position them
                       effectively. Make sure the SEO product description
@@ -170,7 +171,7 @@ export default function Blog4() {
                   </ol>
  
                   <h2 style={{ color: "#3b6d6e" }}>Conclusion</h2>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     In summary, creating product descriptions that sell takes
                     creativity, empathy, and strategy. Following these tips and
                     optimizing for SEO can transform dull descriptions into
@@ -186,7 +187,7 @@ export default function Blog4() {
                     What are some best practices for writing effective product
                     descriptions?
                   </p>
-                  <ol  className="blog-ordered-item text-[#848892] pl-4">
+                  <ol  className="blog-ordered-item text-black pl-4">
                     <li>Adapting content based on customer demand.</li>
                     <li>
                       Prioritizing customer benefits over product capabilities.
@@ -211,7 +212,7 @@ export default function Blog4() {
                     How can content writing services help improve product
                     descriptions for e-commerce businesses?
                   </p>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Content writing services can do this by hiring professional
                     writers. They should have expertise in creating compelling
                     content which requires SEO optimization skills; therefore,
@@ -222,23 +223,23 @@ export default function Blog4() {
                     How can e-commerce businesses measure the success of their
                     product description writing efforts?
                   </p>
-                  <ol  className="blog-ordered-item text-[#848892] pl-4">
+                  <ol  className="blog-ordered-item text-black pl-4">
                     <li>
-                      <b>Conversion rates - </b>More conversions occur due to powerful
+                      <b className="text-[#848892]">Conversion rates - </b>More conversions occur due to powerful
                       sales content and persuasive descriptions which motivates
                       purchases.
                     </li>
                     <li>
-                     <b>Time spent on product pages - </b>More time devoted to these
+                     <b className="text-[#848892]">Time spent on product pages - </b>More time devoted to these
                       areas indicates the engagement of readers.
                     </li>
                     <li>
-                     <b>Search engine rankings -</b> A climb in search engine rankings
+                     <b className="text-[#848892]">Search engine rankings -</b> A climb in search engine rankings
                       indicates descriptions infused with targeted keywords
                       aligned with customers' preferences.
                     </li>
                     <li>
-                     <b>Customer feedback - </b>Good feedbacks illustrate how
+                     <b className="text-[#848892]">Customer feedback - </b>Good feedbacks illustrate how
                       captivating the description was.
                     </li>
                   </ol>
@@ -288,7 +289,7 @@ export default function Blog4() {
                 <div className="blog1-image-section">
                   <img src={Icon}></img>
                 </div>
-                <p className="text-[#848892] mt-3 text-justify">
+                <p className="text-black mt-3 text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                   necessitatibus eveniet aperiam quas animi voluptatibus
                   perspiciatis quidem eum nam quo consectetur facere et, fugit,

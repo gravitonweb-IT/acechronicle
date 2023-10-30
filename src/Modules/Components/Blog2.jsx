@@ -52,11 +52,11 @@ export default function Blog2() {
                     Exploring the Future of Digital Marketing
                   </h2>
                   <h4 className="text-[#3b6d6e] mt-4">Meta title:</h4>
-                  <p className="text-[#848892]">
+                  <p className="text-black">
                     Prepare Your Business for the Future With New Tech!
                   </p>
                   <h4 className="text-[#3b6d6e]">Meta description:</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Advancements in technology have dramatically changed the
                     landscape, creating many opportunities for brands online.
                     Today's digital marketing involves skillfully leveraging
@@ -74,7 +74,7 @@ export default function Blog2() {
                   <h4 className="text-[#3b6d6e]">
                     Current State of Digital Marketing
                   </h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Digital marketing plays a major role in business strategies
                     as technology advances continuously. Currently it is a
                     multifaceted playground where businesses use several online
@@ -89,7 +89,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Augmented and virtual reality:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Data provides valuable insights into customer
                         preferences, behaviors, and needs, enabling targeted
                         campaigns and experiences.
@@ -99,7 +99,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Social Media Dominance:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Social media remains hugely influential, with platforms
                         like Facebook and Instagram central to engagement,
                         promotion, and community-building.
@@ -107,7 +107,7 @@ export default function Blog2() {
                     </li>
                     <li>
                       <b className="text-[#848892]">Content is King:</b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         High-quality, useful content in varied formats like
                         blogs, videos, and podcasts continues driving
                         connections.
@@ -117,7 +117,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Mobile-Centric Strategy:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Mobile optimization is essential given how people use
                         smartphones. Responsive websites, apps, and mobile
                         content deliver cohesive experiences.
@@ -128,7 +128,7 @@ export default function Blog2() {
                   <h4 className="text-[#3b6d6e]">
                     Predicted Trends in Digital Marketing
                   </h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     The digital world continues progressing rapidly as new
                     technologies emerge. Here are some highlights on how certain
                     innovations may impact the future:
@@ -138,7 +138,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Augmented and virtual reality:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         By bringing products to life through interactive AR/VR
                         demos and virtual environments, customers' experiences
                         with items will become more engaging and realistic than
@@ -149,7 +149,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Artificial intelligence:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Machines that learn will automate repetitive tasks like
                         content creation and audience segmenting to streamline
                         processes. Chatbots that offer personalized, real-time
@@ -160,7 +160,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Niche Social Media Platforms and E-commerce Integration:{" "}
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         More e-commerce elements will be incorporated into
                         social media, enabling direct sales on websites like
                         Instagram and Facebook. Businesses will be allowed to
@@ -171,7 +171,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Voice Search Optimization:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         As more consumers switch from using browsers to voice
                         assistants for inquiries, optimising for voice search
                         will become increasingly critical. Businesses will need
@@ -183,7 +183,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Data Privacy and Security:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Regulations and trust-damaging data breaches will make
                         data privacy and security a higher priority;
                         organisations must safeguard customer information and
@@ -195,7 +195,7 @@ export default function Blog2() {
                   <h4 className="text-[#3b6d6e]">
                     Preparing Your Business for the Future
                   </h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Are you ready to prepare your business for the future?
                     Follow these tips:
                   </p>
@@ -204,7 +204,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Invest in Emerging Technologies:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Dive into cutting-edge inventions like AR, VR, AI, and
                         automation into your business marketing strategy.
                         Uncover the ways they will transform interpersonal
@@ -215,7 +215,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Prioritize Personalization:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Your business must prioritize personalized content and
                         experiences via customer insights. This will heighten
                         your company’s involvement and profitability.
@@ -225,7 +225,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Embrace New Platforms:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Prospects for growth lie within untapped online
                         channels. Businesses must research these new platforms
                         and discover ways to leverage them to open new revenue
@@ -236,7 +236,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Enhance Data Security:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Businesses must protect personal information of users
                         through robust data protocols, which will foster loyalty
                         while ensuring compliance with laws.
@@ -246,7 +246,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Optimize for Voice Search:
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Businesses must refine their website SEO optimization
                         based on common speech patterns employed with voice
                         assistants yields better results for users searching via
@@ -263,7 +263,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Amazon India's The Great Indian Freedom Sale :
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Amazon India leveraged patriotism and engaging
                         contests/ads on Independence Day to boost sales.
                       </span>
@@ -272,7 +272,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         BookMyShow's #CinemalsBack Campaign :
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         BookMyShow used timely influencer partnerships and
                         social media reminding people of theater joy as cinemas
                         reopened.
@@ -282,7 +282,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Reliance Jio's #5YearsOfJio Campaign :
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Jio celebrated its anniversary with an emotional
                         storytelling campaign sharing its journey through
                         influencers across platforms.
@@ -292,7 +292,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Hershey's #MeantToBeShared Campaign :
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Hershey's tapped into the sentiment of friendship
                         through hashtags and user-generated content for its
                         campaign.
@@ -302,7 +302,7 @@ export default function Blog2() {
                       <b className="text-[#848892]">
                         Adidas' #OpenForum Campaign :
                       </b>
-                      <span className="text-[#848892] text-justify">
+                      <span className="text-black text-justify">
                         Adidas combined social media features and influencer
                         collaborations to promote a new shoe line in an
                         engaging, widespread campaign.
@@ -310,7 +310,7 @@ export default function Blog2() {
                     </li>
                   </ol>
                   <h4 className="text-[#3b6d6e]">Conclusion</h4>
-                  <p className="text-[#848892] text-justify">
+                  <p className="text-black text-justify">
                     Advances in areas like augmented reality, artificial
                     intelligence, voice interactions and privacy are reshaping
                     customers' experiences. To thrive in this evolving
@@ -374,7 +374,7 @@ export default function Blog2() {
                 <div className="blog1-image-section">
                   <img src={Icon}></img>
                 </div>
-                <p className="text-[#848892] mt-3 text-justify">
+                <p className="text-black mt-3 text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                   necessitatibus eveniet aperiam quas animi voluptatibus
                   perspiciatis quidem eum nam quo consectetur facere et, fugit,
